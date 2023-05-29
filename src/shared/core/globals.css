@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    scrollbar-width: thin;
+  }
+  
+  *:focus-visible {
+    @apply outline outline-[2px] outline-outline;
+  }
+  
+  body {
+    @apply bg-background;
+  }
+  
+  ::-webkit-scrollbar {
+    @apply w-[7px] bg-scrollbar-track;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    @apply bg-scrollbar-thumb rounded-full;
+  }
+}
