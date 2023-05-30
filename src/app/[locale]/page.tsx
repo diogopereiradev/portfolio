@@ -1,9 +1,13 @@
 import React from 'react';
+import { setServerLocale } from '../../shared/contexts/localeServerContext';
 
-export default function Home() {
+export default function Home({ params }: { params: { locale: string } }) {
+  // Initialize server components global locale context 
+  setServerLocale(params.locale);
+
   return (
     <main>
-      <h1 className='text-[40px] text-[#1e1e1e]'>Hello, World</h1>
+      
     </main>
   );
 }

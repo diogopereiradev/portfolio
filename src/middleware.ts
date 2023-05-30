@@ -1,9 +1,11 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { localeDetectionMiddlewareHandle } from './shared/middlewares/localeDetection.middleware';
 
 export function middleware(req: NextRequest) {
-  return NextResponse.next();
+  const localeDetectionResponse = localeDetectionMiddlewareHandle(req);
+  return localeDetectionResponse || NextResponse.next();
 }
 
 export const config = {
-  matcher: ['/', '/:locale*']
+  matcher: ['/((?!api|_next/static|_next/image|assets|favicon.ico|sw.js).*)']
 };
