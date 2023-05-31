@@ -5,10 +5,37 @@
 @layer base {
   * {
     scrollbar-width: thin;
+    scrollbar-gutter: stable;
+    scrollbar-color: theme(colors.scrollbar.thumb) theme(colors.scrollbar.track);
+    @apply font-default font-[500] antialiased;
   }
   
   *:focus-visible {
     @apply outline outline-[2px] outline-outline;
+  }
+
+  h1 {
+    @apply text-primary-100 text-4xl font-[700];
+  }
+
+  h2 {
+    @apply text-primary-100 text-3xl font-[500];
+  }
+
+  h3 {
+    @apply text-primary-100 text-2xl font-[500];
+  }
+
+  h4 {
+    @apply text-primary-100 text-xl font-[500];
+  }
+
+  p {
+    @apply text-primary-100 text-[16.5px] font-[500];
+  }
+
+  button {
+    @apply px-14 py-3 bg-primary-200 hover:bg-primary-300 active:bg-primary-400 rounded-full duration-150 font-[600] text-secondary-400;
   }
   
   body {

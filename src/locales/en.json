@@ -1,3 +1,6 @@
 {
-  "test": "Hello"
+  "metadata.document.title": "Diogo Pereira | Front-end Developer",
+  "metadata.og.title": "Diogo Pereira | Front-end Developer",
+  "metadata.og.description": "Front-end Developer specialized in React.js, Next.js, Typescript, searching for new knowledge.",
+  "metadata.page.description": "Front-end Developer specialized in React.js, Next.js, Typescript, searching for new knowledge."
 }

@@ -16,26 +16,28 @@ module.exports = {
         sm: { max: '320px' },
       },
       colors: {
-        background: '#',
+        background: '#171826',
         primary: {
-          100: '#',
-          200: '#',
-          300: '#',
-          400: '#',
-          500: '#'
+          100: '#65acdb',
+          200: '#4c9acf',
+          300: '#3c84b5',
+          400: '#2d6f9c',
+          500: '#225d85',
+          0: '#65acdb18'
         },
         secondary: {
-          100: '#',
-          200: '#',
-          300: '#',
-          400: '#',
-          500: '#'
+          100: '#30304a',
+          200: '#2a2a42',
+          300: '#26263d',
+          400: '#1f1f33',
+          500: '#131321',
+          0: '#30304a33'
         },
         scrollbar: {
           track: 'transparent',
-          thumb: '#'
+          thumb: '#0c0c12'
         },
-        outline: '#'
+        outline: '#4949cc'
       },
       textColor: {
         primary: {
@@ -46,17 +48,17 @@ module.exports = {
           500: '#707070',
         },
         secondary: {
-          100: '#',
-          200: '#',
-          300: '#',
-          400: '#',
-          500: '#'
+          100: '#154663',
+          200: '#10344a',
+          300: '#0c2738',
+          400: '#081a26',
+          500: '#07151f'
         },
       },
       fontFamily: {
-        default: 'Roboto'
+        default: ['Inter', 'Roboto']
       }
     },
   },
-  plugins: [],
+  plugins: []
 };

@@ -43,7 +43,7 @@ export function localeDetectionMiddlewareHandle(req: NextRequest) {
   } else {
     const pathnameLocaleParam = req.nextUrl.pathname.split('/')[1];
     const pathnameWithoutLocaleParam = req.nextUrl.pathname.replace(`/${pathnameLocaleParam}`, '');
-    return NextResponse.redirect(new URL(`/${lng}${pathnameWithoutLocaleParam}`, req.url));
+    return NextResponse.redirect(new URL(`/${lng}${pathnameWithoutLocaleParam}`, req.url), { status: 301 });
   }
   return NextResponse.next();
 }
