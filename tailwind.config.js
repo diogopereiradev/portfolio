@@ -3,39 +3,40 @@ module.exports = {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}'
   ],
   theme: {
+    screens: {
+      '3xl': { max: '1280px' },
+      '2xl': { max: '1100px' },
+      xl: { max: '900px' },
+      lg: { max: '768px' },
+      mmd: { max: '568px' },
+      md: { max: '420px' },
+      sm: { max: '320px' },
+    },
     extend: {
-      screens: {
-        '3xl': { max: '1280px' },
-        '2xl': { max: '900px' },
-        xl: { max: '768px' },
-        lg: { max: '568px' },
-        md: { max: '420px' },
-        sm: { max: '320px' },
-      },
       colors: {
-        background: '#171826',
+        background: '#090909',
         primary: {
-          100: '#65acdb',
-          200: '#4c9acf',
-          300: '#3c84b5',
-          400: '#2d6f9c',
-          500: '#225d85',
-          0: '#65acdb18'
+          100: '#696cff',
+          200: '#5959e3',
+          300: '#4b4bc9',
+          400: '#3d3dad',
+          500: '#313194',
+          0: '#373966'
         },
         secondary: {
-          100: '#30304a',
-          200: '#2a2a42',
-          300: '#26263d',
-          400: '#1f1f33',
-          500: '#131321',
-          0: '#30304a33'
+          100: '#303030',
+          200: '#252525',
+          300: '#202020',
+          400: '#151515',
+          500: '#131313',
+          0: '#30303033'
         },
         scrollbar: {
           track: 'transparent',
-          thumb: '#0c0c12'
+          thumb: '#303030'
         },
         outline: '#4949cc'
       },
@@ -48,17 +49,18 @@ module.exports = {
           500: '#707070',
         },
         secondary: {
-          100: '#154663',
-          200: '#10344a',
-          300: '#0c2738',
-          400: '#081a26',
-          500: '#07151f'
-        },
+          100: '#696cff',
+          200: '#5959e3',
+          300: '#4b4bc9',
+          400: '#3d3dad',
+          500: '#313194'
+        }
       },
       fontFamily: {
-        default: ['Inter', 'Roboto']
+        text: ['var(--font-roboto-text)', 'Inter', 'open-sans', 'sans-serif'],
+        title: ['var(--font-tttsars-title)', 'var(--font-roboto-text)', 'Inter', 'open-sans', 'sans-serif']
       }
-    },
+    }
   },
   plugins: []
 };

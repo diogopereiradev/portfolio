@@ -1,15 +1,9 @@
 import '../globals.css';
 import React from 'react';
-import { Inter } from 'next/font/google';
 import { dir } from 'i18next';
+import { roboto, tt_tsars_b_trial } from './fonts';
 import { useSSRTranslation } from '../../shared/hooks/useSSRTranslation';
 import { supportedLanguages } from '../../shared/i18n/settings';
-
-const inter = Inter({
-  weight: ['400', '500', '700', '900'],
-  subsets: ['latin'],
-  display: 'swap'
-});
 
 export async function generateStaticParams() {
   return supportedLanguages.map(locale => ({ locale }));
@@ -23,7 +17,7 @@ export default async function RootLayout({ children, params: { locale } }: { chi
   const { t } = await useSSRTranslation(locale);
 
   return (
-    <html lang={locale} dir={dir(locale)} className={inter.className}>
+    <html lang={locale} dir={dir(locale)} className={`${roboto.variable} ${tt_tsars_b_trial.variable}`}>
       <head>
         <title>{t('metadata.document.title')}</title>
         <meta name="author" content="Diogo Pereira" />
