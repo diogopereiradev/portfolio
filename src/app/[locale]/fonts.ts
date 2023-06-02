@@ -1,5 +1,4 @@
-import { Roboto } from 'next/font/google';
-import localFont from 'next/font/local';
+import { Roboto, Libre_Baskerville } from 'next/font/google';
 
 export const roboto = Roboto({
   weight: ['400', '500', '700', '900'],
@@ -8,28 +7,9 @@ export const roboto = Roboto({
   variable: '--font-roboto-text'
 });
 
-export const tt_tsars_b_trial = localFont({
-  src: [
-    {
-      path: '../fonts/TT_Tsars_B_Trial_Light.otf',
-      weight: '400',
-      style: 'normal'
-    },
-    {
-      path: '../fonts/TT_Tsars_B_Trial_Regular.otf',
-      weight: '500',
-      style: 'normal'
-    },
-    {
-      path: '../fonts/TT_Tsars_B_Trial_Bold.otf',
-      weight: '700',
-      style: 'normal'
-    },
-    {
-      path: '../fonts/TT_Tsars_B_Trial_Black.otf',
-      weight: '900',
-      style: 'normal'
-    }
-  ],
-  variable: '--font-tttsars-title'
+export const libre_baskerville = Libre_Baskerville({
+  weight: ['400', '700'],
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-libre-title'
 });

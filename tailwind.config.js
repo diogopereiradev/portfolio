@@ -58,7 +58,7 @@ module.exports = {
       },
       fontFamily: {
         text: ['var(--font-roboto-text)', 'Inter', 'open-sans', 'sans-serif'],
-        title: ['var(--font-tttsars-title)', 'var(--font-roboto-text)', 'Inter', 'open-sans', 'sans-serif']
+        title: ['var(--font-libre-title)', 'var(--font-roboto-text)', 'Inter', 'open-sans', 'sans-serif']
       }
     }
   },
