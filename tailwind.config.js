@@ -7,13 +7,13 @@ module.exports = {
   ],
   theme: {
     screens: {
-      '3xl': { max: '1280px' },
-      '2xl': { max: '1100px' },
-      xl: { max: '900px' },
-      lg: { max: '768px' },
-      mmd: { max: '568px' },
-      md: { max: '420px' },
-      sm: { max: '320px' },
+      '3xl': '1280px',
+      '2xl': '1100px',
+      xl: '900px',
+      lg: '768px',
+      mmd: '568px',
+      md: '420px',
+      sm: '320px'
     },
     extend: {
       colors: {
@@ -27,11 +27,11 @@ module.exports = {
           0: '#373966'
         },
         secondary: {
-          100: '#303030',
-          200: '#252525',
-          300: '#202020',
-          400: '#151515',
-          500: '#131313',
+          100: '#252525',
+          200: '#202020',
+          300: '#171717',
+          400: '#131313',
+          500: '#111111',
           0: '#30303033'
         },
         scrollbar: {
@@ -46,7 +46,7 @@ module.exports = {
           200: '#d3d3d3',
           300: '#c8c8c8',
           400: '#8a8a8a',
-          500: '#707070',
+          500: '#707070'
         },
         secondary: {
           100: '#696cff',
@@ -57,8 +57,8 @@ module.exports = {
         }
       },
       fontFamily: {
-        text: ['var(--font-roboto-text)', 'Inter', 'open-sans', 'sans-serif'],
-        title: ['var(--font-libre-title)', 'var(--font-roboto-text)', 'Inter', 'open-sans', 'sans-serif']
+        text: ['var(--font-inter)', 'open-sans', 'sans-serif'],
+        title: ['var(--font-lily)', 'open-sans', 'sans-serif']
       }
     }
   },

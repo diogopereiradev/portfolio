@@ -4,5 +4,7 @@
   "metadata.og.description": "Front-end Developer specialized in React.js, Next.js, Typescript, searching for new knowledge.",
   "metadata.page.description": "Front-end Developer specialized in React.js, Next.js, Typescript, searching for new knowledge.",
 
-  "navbar.workwithme.button": "Work With Me"
+  "navbar.mobile.menu.workwithme.button": "Work with me",
+
+  "header.title.description": "Front-end Developer"
 }

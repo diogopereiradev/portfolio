@@ -1,15 +1,15 @@
-import { Roboto, Libre_Baskerville } from 'next/font/google';
+import { Inter, Lily_Script_One } from 'next/font/google';
 
-export const roboto = Roboto({
-  weight: ['400', '500', '700', '900'],
+export const inter = Inter({ 
   subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-roboto-text'
+  weight: ['400', '500', '700', '900'], 
+  variable: '--font-inter',
+  display: 'fallback' 
 });
 
-export const libre_baskerville = Libre_Baskerville({
-  weight: ['400', '700'],
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-libre-title'
+export const lily_script_one = Lily_Script_One({ 
+  subsets: ['latin'], 
+  weight: '400', 
+  variable: '--font-lily',
+  display: 'swap' 
 });

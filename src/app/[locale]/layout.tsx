@@ -1,7 +1,7 @@
 import '../globals.css';
 import React from 'react';
 import { dir } from 'i18next';
-import { roboto, libre_baskerville } from './fonts';
+import { inter, lily_script_one } from './fonts';
 import { useSSRTranslation } from '../../shared/hooks/useSSRTranslation';
 import { supportedLanguages } from '../../shared/i18n/settings';
 
@@ -17,7 +17,7 @@ export default async function RootLayout({ children, params: { locale } }: { chi
   const { t } = await useSSRTranslation(locale);
 
   return (
-    <html lang={locale} dir={dir(locale)} className={`${roboto.variable} ${libre_baskerville.variable}`}>
+    <html lang={locale} dir={dir(locale)} className={`${inter.variable} ${lily_script_one.variable}`}>
       <head>
         <title>{t('metadata.document.title')}</title>
         <meta name="author" content="Diogo Pereira" />

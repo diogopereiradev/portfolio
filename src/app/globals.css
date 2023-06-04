@@ -38,7 +38,11 @@
   }
 
   button {
-    @apply px-10 py-[10px] bg-primary-100 hover:bg-primary-200 active:bg-primary-300 rounded-[6px] duration-150 font-[700] text-primary-200;
+    @apply px-10 py-[10px] bg-primary-100 hover:bg-primary-200 active:bg-primary-300 rounded-full duration-150 font-[700] text-primary-200;
+  }
+
+  hr {
+    @apply h-[2px] bg-secondary-200 border-none;
   }
   
   body {
