@@ -21,8 +21,7 @@ function Menu({ state }: { state: [boolean, React.Dispatch<React.SetStateAction<
           w-screen
           h-screen
           z-[9]
-          bg-[#00000033]
-          ${isOpen ? 'backdrop-blur-[3px]' : 'pointer-events-none backdrop-blur-[0px]'}
+          ${isOpen ? 'backdrop-blur-[3px] bg-[#00000033]' : 'pointer-events-none backdrop-blur-[0px]'}
           duration-300
         `}
       />
