@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { MobileSectionSeparator } from '../../../../shared/components/MobileSectionSeparator';
 import { Navbar } from './components/Navbar';
 import { TitleAndDescription } from './components/TitleAndDescription';
 import { ScrollButton } from './components/ScrollButton';
+import { MobileSectionSeparator } from '../../../components/MobileSectionSeparator';
 
 export function Header(): JSX.Element {
   return (
