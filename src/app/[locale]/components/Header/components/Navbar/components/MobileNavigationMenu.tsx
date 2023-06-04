@@ -38,7 +38,6 @@ function Menu({ state }: { state: [boolean, React.Dispatch<React.SetStateAction<
           bg-secondary-500
           rounded-[30px]
           ${isOpen ? 'translate-x-[0px]' : 'pointer-events-none translate-x-[-100vw]'}
-          ease-[cubic-bezier(0.175, 0.885, 0.32, 1.275)]
           duration-300
           px-[15px]
           py-[18px]
