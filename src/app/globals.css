@@ -18,7 +18,7 @@
   }
 
   h2 {
-    @apply font-title text-primary-100 text-3xl;
+    @apply font-title text-primary-100 text-4xl font-[700];
   }
 
   h3 {

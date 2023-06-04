@@ -3,6 +3,7 @@ import { setServerLocale } from '../../shared/contexts/localeServerContext';
 
 import { Header } from './components/Header';
 import { AboutMeSection } from './components/AboutMeSection';
+import { SkillsSection } from './components/SkillsSection';
 
 export default function Home({ params }: { params: { locale: string } }) {
   // Initialize server components global locale context 
@@ -12,6 +13,7 @@ export default function Home({ params }: { params: { locale: string } }) {
     <main className='flex flex-col relative max-w-[2120px] m-[0_auto]'>
       <Header />
       <AboutMeSection />
+      <SkillsSection />
     </main>
   );
 }

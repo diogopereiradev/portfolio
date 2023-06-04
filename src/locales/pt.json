@@ -11,5 +11,10 @@
   "aboutme.section.title": "Sobre mim",
   "aboutme.section.description.paragraph.1": "Estudo programação desde os meus 14 anos. Eu comecei com a criação de plugins para o Minecraft, e trabalhei em um servidor de Minecraft por um tempo.",
   "aboutme.section.description.paragraph.2": "No entanto, decidi migrar para o desenvolvimento web para dar seguimento à minha carreira, e também devido a infinidade de possibilidades de personalização e às ideias que podem ser incorporadas em páginas da web.",
-  "aboutme.section.description.paragraph.3": "Durante a minha migração eu tive a oportunidade de trabalhar em alguns projetos freelance pequenos, em sites de animes e alguns outros mais distintos."
+  "aboutme.section.description.paragraph.3": "Durante a minha migração eu tive a oportunidade de trabalhar em alguns projetos freelance pequenos, em sites de animes e alguns outros mais distintos.",
+
+  "skills.section.title": "Habilidades",
+  "skills.section.description": "Clique na tecnologia para visualizar todas as informações disponiveis.",
+  "skills.section.supporttechs.title": "Tecnologias de suporte:",
+  "skills.section.basictechs.title": "Conhecimento básico:"
 }
