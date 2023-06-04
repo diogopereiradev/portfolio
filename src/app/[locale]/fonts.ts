@@ -1,11 +1,12 @@
-import { Inter, Lily_Script_One } from 'next/font/google';
+import { Roboto, Lily_Script_One } from 'next/font/google';
 
-export const inter = Inter({ 
+export const roboto = Roboto({ 
   subsets: ['latin'],
   weight: ['400', '500', '700', '900'], 
-  variable: '--font-inter',
+  variable: '--font-roboto',
   display: 'fallback' 
 });
+
 
 export const lily_script_one = Lily_Script_One({ 
   subsets: ['latin'], 

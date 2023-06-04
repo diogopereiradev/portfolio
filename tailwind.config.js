@@ -57,7 +57,7 @@ module.exports = {
         }
       },
       fontFamily: {
-        text: ['var(--font-inter)', 'open-sans', 'sans-serif'],
+        text: ['var(--font-roboto)', 'var(--font-inter)', 'open-sans', 'sans-serif'],
         title: ['var(--font-lily)', 'open-sans', 'sans-serif']
       }
     }

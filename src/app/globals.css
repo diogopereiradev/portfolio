@@ -30,15 +30,15 @@
   }
 
   p {
-    @apply font-text text-primary-100 text-[16.5px];
+    @apply font-text font-[700] text-primary-100 text-[16.5px];
   }
 
   a {
-    @apply hover:text-secondary-100 active:text-secondary-200 duration-150 font-[700] text-primary-200 rounded-[10px] p-[5px];
+    @apply hover:text-secondary-100 active:text-secondary-200 duration-150 font-[700] font-text text-primary-200 rounded-[10px] p-[5px];
   }
 
   button {
-    @apply px-10 py-[10px] bg-primary-100 hover:bg-primary-200 active:bg-primary-300 rounded-full duration-150 font-[700] text-primary-200;
+    @apply px-10 py-[10px] bg-primary-100 hover:bg-primary-200 active:bg-primary-300 rounded-full duration-150 font-text font-[700] text-primary-200;
   }
 
   hr {
