@@ -1,10 +1,14 @@
 'use client';
 import React from 'react';
+import { setDocumentScroll } from '../../../../../../../../../shared/utils/setDocumentScroll';
 
 export function ClientMenuFrame({ state, children }: { state: [boolean, React.Dispatch<React.SetStateAction<boolean>>], children: JSX.Element | JSX.Element[] }): JSX.Element {
   const [isOpen, setIsOpen] = state;
 
-  const handleCloseMenu = () => setIsOpen(false);
+  const handleCloseMenu = () => {
+    setIsOpen(false);
+    setDocumentScroll(true);
+  };
 
   return (
     <>

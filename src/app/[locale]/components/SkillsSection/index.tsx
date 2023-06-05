@@ -2,9 +2,24 @@ import React from 'react';
 import { useSSRTranslation } from '../../../../shared/hooks/useSSRTranslation';
 
 import { MobileSectionSeparator } from '../../../components/MobileSectionSeparator';
-import { FrontEndSkills } from './components/FrontEndSkills';
-import { SupportSkills } from './components/SupportSkills';
-import { BasicSkills } from './components/BasicSkills';
+import { MobileFrontEndSkills } from './components/mobile/MobileFrontendSkills';
+import { MobileSupportSkills } from './components/mobile/MobileSupportSkills';
+import { MobileBasicSkills } from './components/mobile/MobileBasicSkills';
+import { MobileMenuProvider } from './components/mobile/MobileSkillMenu/context/mobileMenuContext';
+import { MobileSkillMenu } from './components/mobile/MobileSkillMenu';
+
+function Skills(): JSX.Element {
+  return (
+    <MobileMenuProvider>
+      <div className='flex flex-col gap-[30px]'>
+        <MobileFrontEndSkills />
+        <MobileSupportSkills />
+        <MobileBasicSkills />
+      </div>
+      <MobileSkillMenu />
+    </MobileMenuProvider>
+  );
+}
 
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
@@ -18,11 +33,7 @@ export async function SkillsSection(): JSX.Element {
         {t('skills.section.description')}
       </p>
       <hr className='w-full h-[2px] mt-[5px]' />
-      <div className='flex flex-col gap-[30px]'>
-        <FrontEndSkills />
-        <SupportSkills />
-        <BasicSkills />
-      </div>
+      <Skills />
       <div className='mx-[auto] mt-[40px]'>
         <MobileSectionSeparator />
       </div>

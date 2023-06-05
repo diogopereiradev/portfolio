@@ -9,7 +9,7 @@ export async function AboutMeSection(): JSX.Element {
   const { t } = await useSSRTranslation();
 
   return(
-    <section className='flex flex-col gap-[25px] px-12 py-0 mt-[-70px]'>
+    <section id='aboutme' className='flex flex-col gap-[25px] px-12 py-0 mt-[-70px]'>
       <h1>{t('aboutme.section.title')}</h1>
       <p className='text-[15px] text-primary-400 font-text'>
         {t('aboutme.section.description.paragraph.1')}
