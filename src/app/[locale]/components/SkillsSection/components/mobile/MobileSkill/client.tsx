@@ -19,7 +19,7 @@ export function MobileSkillButton({ children, data }: MobileSkillButtonProps) {
   };
 
   return(
-    <button onClick={handleMenuOpen} className='flex items-center gap-[10px] w-[135px] [@media_screen_and_(max-width:368px)]:w-[120px] h-[40px] px-[12px] bg-secondary-400 rounded-full'>
+    <button title={data.title} onClick={handleMenuOpen} className='flex items-center gap-[10px] w-[135px] [@media_screen_and_(max-width:368px)]:w-[120px] h-[40px] px-[12px] bg-secondary-400 rounded-full'>
       {children}
     </button>
   );

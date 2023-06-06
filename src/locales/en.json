@@ -46,5 +46,9 @@
   "skills.section.skill.menu.description.sql": "I have studied SQL a bit. I can perform basic queries such as select, delete(without using the where clause, just kidding), and all the basic CRUD operations.",
   "skills.section.skill.menu.description.sqlite": "SQLite is great for storing data locally. I have used it a few times for private projects that use Node.js.",
   "skills.section.skill.menu.description.mysql": "I have used MySQL very little. Regarding queries, it is very similar to other relational databases, so I can manage it if needed for something.",
-  "skills.section.skill.menu.description.postgresql": "I have used PostgreSQL once for a personal Discord bot. It is quite versatile and easy to implement, so if needed, I know how to implement it."
+  "skills.section.skill.menu.description.postgresql": "I have used PostgreSQL once for a personal Discord bot. It is quite versatile and easy to implement, so if needed, I know how to implement it.",
+
+  "projects.section.title": "Projects",
+  "projects.section.description": "Click on the project card to view all available information.",
+  "projects.section.viewmore.button": "View more"
 }

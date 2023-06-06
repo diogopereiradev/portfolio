@@ -46,5 +46,9 @@
   "skills.section.skill.menu.description.sql": "Estudei um pouco sobre SQL, sei realizar queries básicas como, select, delete sem utilizar o where(brincadeira), e etc, todas as operações básicas de um CRUD.",
   "skills.section.skill.menu.description.sqlite": "O SQLite é muito bom para salvar dados localmente, utilizei ele algumas vezes para a criação de projetos pessoais não públicos que utilizam Node.js.",
   "skills.section.skill.menu.description.mysql": "Utilizei ele muito pouco, em relação à queries é muito igual a outros bancos de dados relacionais obviamente, então eu sei desenrolar caso precise utilizar para alguma coisa.",
-  "skills.section.skill.menu.description.postgresql": "Utilizei ele uma vez para um bot do discord pessoal, ele é bem versátil e fácil de implementar, então caso precise utilizar eu sei implementa-lo."
+  "skills.section.skill.menu.description.postgresql": "Utilizei ele uma vez para um bot do discord pessoal, ele é bem versátil e fácil de implementar, então caso precise utilizar eu sei implementa-lo.",
+
+  "projects.section.title": "Projetos",
+  "projects.section.description": "Clique no cartão do projeto para visualizar todas as informações disponiveis.",
+  "projects.section.viewmore.button": "Ver mais"
 }
