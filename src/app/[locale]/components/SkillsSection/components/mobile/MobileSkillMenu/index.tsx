@@ -69,7 +69,7 @@ function Description(): JSX.Element {
   return (
     <div className='flex flex-col gap-[10px] w-full'>
       <p className='text-[16px] text-primary-200'>{t('skills.section.skill.menu.description.text')}:</p>
-      <div className='flex w-full h-[180px] overflow-scroll bg-secondary-200 rounded-[20px] border-[2px] border-solid border-secondary-300 px-[25px] py-[16px]'>
+      <div className='flex w-full h-[180px] overflow-scroll bg-secondary-200 rounded-[8px] border-[2px] border-solid border-secondary-300 px-[25px] py-[16px]'>
         <div>
           <p className='text-[14.5px] leading-6 text-primary-300'>{data.description}</p>
           <div className='h-[20px]'></div>
