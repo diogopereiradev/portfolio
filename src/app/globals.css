@@ -58,7 +58,7 @@
     @apply bg-scrollbar-thumb rounded-full;
   }
 
-  ::-webkit-scrollbar-track {
-    @apply bg-scrollbar-track;
+  ::-webkit-scrollbar-corner {
+    @apply bg-transparent;
   }
 }
