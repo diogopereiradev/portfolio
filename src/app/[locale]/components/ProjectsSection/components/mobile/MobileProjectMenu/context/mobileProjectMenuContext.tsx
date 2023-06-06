@@ -24,6 +24,7 @@ export function MobileMenuProvider({ children }: { children: JSX.Element | JSX.E
       name: '',
       description: '',
       projectUrl: '',
+      projectRepositoryUrl: '',
       projectIconUrl: '',
       technologies: [],
       projectThumbImageUrl: '',
