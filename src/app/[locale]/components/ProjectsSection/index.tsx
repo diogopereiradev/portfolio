@@ -4,21 +4,19 @@ import { MobileSectionSeparator } from '../../../components/MobileSectionSeparat
 import { MobileMenuProvider } from './components/mobile/MobileProjectMenu/context/mobileProjectMenuContext';
 import { ProjectCard } from './components/mobile/ProjectCard';
 import { MobileProjectMenu } from './components/mobile/MobileProjectMenu';
+import { useRepositories } from '../../../../shared/hooks/useRepositories';
 
-function Projects(): JSX.Element {
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
+async function Projects(): JSX.Element {
+  const repositoriesData = await useRepositories();
+
   return(
     <MobileMenuProvider>
       <div className='flex flex-wrap gap-[30px] justify-center mt-[20px]'>
-        <ProjectCard
-          name='Mock'
-          projectRepositoryUrl='https://github.com/FhillSlinger/mock'
-          description='Isso é um mock pois não existe nada ser falado de um projeto que se chama mock e que é apenas um mock mockado.'
-          projectUrl='https://mock.mock.mock.non'
-          projectIconUrl='https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/2300px-React-icon.svg.png'
-          projectThumbImageUrl='https://h5p.org/sites/default/files/h5p/content/1209180/images/file-6113d5f8845dc.jpeg'
-          technologies={[{ label: 'React.js', color: '#5ab6e1' }, { label: 'SC', color: '#c154c7' }, { label: 'Next.js', color: '#4689c3' }]}
-          createdAt={new Date('12/12/2023')}
-        />
+        {repositoriesData.map(data => (
+          <ProjectCard key={data.name} data={data}/>
+        ))}
       </div>
       <MobileProjectMenu />
     </MobileMenuProvider>

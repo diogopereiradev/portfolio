@@ -22,8 +22,8 @@ export function MobileMenuProvider({ children }: { children: JSX.Element | JSX.E
     isOpen: false,
     data: {
       name: '',
-      description: '',
-      projectUrl: '',
+      description: {},
+      projectLiveUrl: '',
       projectRepositoryUrl: '',
       projectIconUrl: '',
       technologies: [],

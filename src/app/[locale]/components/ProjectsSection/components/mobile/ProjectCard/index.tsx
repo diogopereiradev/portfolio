@@ -5,7 +5,7 @@ import { setDocumentScroll } from '../../../../../../../shared/utils/setDocument
 import { ProjectData } from '../../../@types/projectMenu';
 import { useMobileProjectMenu } from '../MobileProjectMenu/hooks/useMobileProjectMenu';
 
-export function ProjectCard(data: ProjectData): JSX.Element {
+export function ProjectCard({ data }: { data: ProjectData }): JSX.Element {
   const { openMenu, updateMenuData } = useMobileProjectMenu();
   const { name, projectThumbImageUrl, createdAt, technologies } = data;
   const releaseDay = createdAt.getDate().toString().length === 1? `0${createdAt.getDate()}` : createdAt.getDate();
@@ -20,7 +20,6 @@ export function ProjectCard(data: ProjectData): JSX.Element {
   return (
     <div onClick={handleMenuOpen} className='w-[290px] h-[265px] rounded-[15px] bg-secondary-500 cursor-pointer'>
       <div className='relative p-[15px]'>
-        <div className='absolute top-[15px] left-[15px] w-[220px] rounded-[15px] h-[145px] bg-[#0000003f] z-[1]'></div>
         <Image className='relative w-full h-[145px] object-cover rounded-[15px]' loading='lazy' src={projectThumbImageUrl} width={300} height={300} alt={`project-${name}-thumb`} />
       </div>
       <div className='flex justify-between items-center py-[5px] px-[25px]'>

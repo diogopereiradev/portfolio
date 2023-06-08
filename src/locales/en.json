@@ -50,5 +50,6 @@
 
   "projects.section.title": "Projects",
   "projects.section.description": "Click on the project card to view all available information.",
-  "projects.section.viewmore.button": "View more"
+  "projects.section.viewmore.button": "View more",
+  "projects.section.project.mobile.menu.viewproject.button": "View project"
 }
