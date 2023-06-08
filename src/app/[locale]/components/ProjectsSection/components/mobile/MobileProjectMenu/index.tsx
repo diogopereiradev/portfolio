@@ -12,7 +12,7 @@ export function MobileProjectMenu(): JSX.Element {
   const { isOpen, data: { projectUrl } } = useMobileProjectMenu();
 
   return (
-    <div className={`fixed left-0 top-0 flex flex-col w-screen h-screen bg-secondary-500 duration-300 ${isOpen ? 'top-0' : 'top-[100vh] opacity-0'} z-[9999]`}>
+    <div className={`fixed left-0 top-0 flex flex-col w-screen h-full bg-secondary-500 duration-300 ${isOpen ? 'top-0' : 'top-[100vh] opacity-0'} z-[9999]`}>
       <Banner />
       <Links />
       <Title />
