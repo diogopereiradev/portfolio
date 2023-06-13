@@ -5,6 +5,7 @@ import { Header } from './components/Header';
 import { AboutMeSection } from './components/AboutMeSection';
 import { SkillsSection } from './components/SkillsSection';
 import { ProjectsSection } from './components/ProjectsSection';
+import { Footer } from './components/Footer';
 
 export default function Home({ params }: { params: { locale: string } }) {
   // Initialize server components global locale context 
@@ -16,6 +17,7 @@ export default function Home({ params }: { params: { locale: string } }) {
       <AboutMeSection />
       <SkillsSection />
       <ProjectsSection />
+      <Footer />
     </main>
   );
 }

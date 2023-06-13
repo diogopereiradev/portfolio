@@ -1,3 +1,4 @@
+'use client';
 import { SupportedLanguages, fallbackLanguage } from '../i18n/settings';
 
 export function useLocale(): () => SupportedLanguages {

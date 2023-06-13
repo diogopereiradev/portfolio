@@ -51,5 +51,7 @@
   "projects.section.title": "Projetos",
   "projects.section.description": "Clique no cartão do projeto para visualizar todas as informações disponiveis.",
   "projects.section.viewmore.button": "Ver mais",
-  "projects.section.project.mobile.menu.viewproject.button": "Acessar projeto"
+  "projects.section.project.mobile.menu.viewproject.button": "Acessar projeto",
+
+  "footer.developed.by.message": "Desenvolvido por"
 }
