@@ -5,5 +5,5 @@ import { useSSRTranslation } from '../../../../../../../../../shared/hooks/useSS
 // @ts-ignore
 export async function MobileWorkWithMeButton(): JSX.Element {
   const { t } = await useSSRTranslation();
-  return <button className='text-[14px] w-full h-[40px]'>{t('navbar.mobile.menu.workwithme.button')}</button>;
+  return <a href='https://diogopereira-beacons.vercel.app' target='_blank' rel='noreferrer' className='flex justify-center items-center text-[14px] hover:text-primary-200 w-full h-[40px] bg-primary-100 hover:bg-primary-200 rounded-full'>{t('navbar.mobile.menu.workwithme.button')}</a>;
 }
