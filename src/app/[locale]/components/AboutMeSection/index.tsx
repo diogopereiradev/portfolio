@@ -5,11 +5,11 @@ import { MobileSectionSeparator } from '../../../components/MobileSectionSeparat
 
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
-export async function AboutMeSection(): JSX.Element {
+export async function MobileAboutMe(): JSX.Element {
   const { t } = await useSSRTranslation();
 
-  return(
-    <section id='aboutme' className='flex flex-col gap-[25px] px-12 py-0 mt-[-70px]'>
+  return (
+    <div className='flex flex-col gap-[25px] px-12 py-0 mt-[-70px] mmd:hidden'>
       <h1>{t('aboutme.section.title')}</h1>
       <p className='text-[15px] text-primary-400 font-text'>
         {t('aboutme.section.description.paragraph.1')}
@@ -23,6 +23,14 @@ export async function AboutMeSection(): JSX.Element {
       <div className='mx-[auto] mt-[40px]'>
         <MobileSectionSeparator />
       </div>
+    </div>
+  );
+}
+
+export function AboutMeSection(): JSX.Element {
+  return (
+    <section id='aboutme'>
+      <MobileAboutMe />
     </section>
   );
 }

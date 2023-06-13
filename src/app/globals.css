@@ -5,7 +5,6 @@
 @layer base {
   * {
     scrollbar-width: thin;
-    scrollbar-gutter: none;
     scrollbar-color: theme(colors.scrollbar.thumb) theme(colors.scrollbar.track);
     scroll-behavior: smooth;
   }

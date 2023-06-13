@@ -39,7 +39,7 @@ export function ClientMenuFrame({ state, children }: { state: [boolean, React.Di
           w-[200px]
           bg-secondary-500
           rounded-[30px]
-          ${isOpen ? 'translate-x-[0px]' : 'pointer-events-none translate-x-[-100vw]'}
+          ${isOpen ? 'opacity-1 translate-x-[0px]' : 'opacity-0 pointer-events-none translate-x-[-100vw]'}
           duration-300
           px-[15px]
           py-[18px]

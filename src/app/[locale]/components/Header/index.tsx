@@ -12,7 +12,9 @@ export function Header(): JSX.Element {
       <div className='flex flex-col justify-center items-center gap-[40px] w-full py-28'>
         <TitleAndDescription />
         <ScrollButton />
-        <MobileSectionSeparator />
+        <div className="mmd:hidden">
+          <MobileSectionSeparator />
+        </div>
       </div>
     </header>
   );

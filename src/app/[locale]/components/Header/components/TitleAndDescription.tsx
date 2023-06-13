@@ -25,7 +25,7 @@ export async function TitleAndDescription(): JSX.Element {
       >
         Diogo Pereira
       </h1>
-      <h3 className='font-text text-[6vw] text-primary-200 font-[700] ml-[5px] mt-[2vw] md:mt-[5vw]'>{t('header.title.description')}</h3>
+      <h3 className='font-text text-[6vw] text-primary-200 font-[700] ml-[5px] mt-[2vw] md:mt-[5vw] 3xl:text-[70px]'>{t('header.title.description')}</h3>
     </div>
   );
 }
