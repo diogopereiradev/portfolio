@@ -2,7 +2,7 @@
 import React from 'react';
 import { usePathname } from 'next/navigation';
 import { useLocale } from '../../../../shared/hooks/useLocale';
-import { languagesFullnameDatabase, supportedLanguages } from '../../../../shared/i18n/settings';
+import { SupportedLanguages, languagesFullnameDatabase, supportedLanguages } from '../../../../shared/i18n/settings';
 
 function Language(props: { locale: string }): JSX.Element {
   const locale = useLocale();
@@ -14,7 +14,7 @@ function Language(props: { locale: string }): JSX.Element {
         className='flex items-center text-[15px] w-full h-full px-[15px] hover:text-primary-300 rounded-[0px]'
         href={`${props.locale}${pathname.replace(`/${locale()}`, '')}`}
       >
-        {languagesFullnameDatabase[props.locale]}
+        {languagesFullnameDatabase[props.locale as SupportedLanguages]}
       </a>
     </li>
   );
