@@ -21,21 +21,26 @@ function isLocaleParamValid(req: NextRequest) {
   return validity;
 }
 
-function trySetRefererLocaleCookie(req: NextRequest) {
+function trySetRefererLocaleCookie(req: NextRequest, next?: NextResponse) {
   if (req.headers.has('referer')) {
     const refererHeader = req.headers.get('referer') as string;
     const refererUrl = new URL(refererHeader);
     const refererPathnameLocaleParam = refererUrl.pathname.split('/')[1];
-    const response = NextResponse.next();
 
     if(supportedLanguages.includes(refererPathnameLocaleParam)) {
-      refererPathnameLocaleParam && response.cookies.set(localeCookieName, refererPathnameLocaleParam);
+      if(next) {
+        next.cookies.set(localeCookieName, refererPathnameLocaleParam);
+        return next;
+      } else {
+        const response = NextResponse.next();
+        refererPathnameLocaleParam && response.cookies.set(localeCookieName, refererPathnameLocaleParam);
+        return response;
+      }
     }
-    return response;
   }
 }
 
-export function localeDetectionMiddlewareHandle(req: NextRequest) {
+export function localeDetectionMiddlewareHandle(req: NextRequest, next?: NextResponse) {
   const lng: string = autoDetectLocale(req);
 
   if(isLocaleParamValid(req)) {
@@ -43,7 +48,8 @@ export function localeDetectionMiddlewareHandle(req: NextRequest) {
   } else {
     const pathnameLocaleParam = req.nextUrl.pathname.split('/')[1];
     const pathnameWithoutLocaleParam = req.nextUrl.pathname.replace(`/${pathnameLocaleParam}`, '');
-    return NextResponse.redirect(new URL(`/${lng}${pathnameWithoutLocaleParam}`, req.url), { status: 301 });
+    const redirectUrl = new URL(`/${lng}${pathnameWithoutLocaleParam}`, req.url);
+    return NextResponse.redirect(redirectUrl, { status: 301 });
   }
-  return NextResponse.next();
+  return next || NextResponse.next();
 }
