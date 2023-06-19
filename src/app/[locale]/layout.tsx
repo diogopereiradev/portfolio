@@ -2,8 +2,11 @@ import '../globals.css';
 import React from 'react';
 import { dir } from 'i18next';
 import { roboto, lily_script_one } from './fonts';
+import { setPathname } from '../../shared/contexts/pathnameContext';
+import { setServerLocale } from '../../shared/contexts/localeServerContext';
 import { useSSRTranslation } from '../../shared/hooks/useSSRTranslation';
 import { supportedLanguages } from '../../shared/i18n/settings';
+import { headers } from 'next/headers';
 
 export async function generateStaticParams() {
   return supportedLanguages.map(locale => ({ locale }));
@@ -13,11 +16,20 @@ type LayoutStaticParams = {
   locale: string
 }
 
-export default async function RootLayout({ children, params: { locale } }: { children: React.ReactNode, params: LayoutStaticParams }) {
-  const { t } = await useSSRTranslation(locale);
+function initializeGlobalServerContexts(params: LayoutStaticParams) {
+  // Set current URL Pathname to global server context
+  const headersList = headers();
+  setPathname(headersList.get('pathname') || '');
+  // Initialize server components global locale context 
+  setServerLocale(params.locale);
+}
+
+export default async function RootLayout({ children, params }: { children: React.ReactNode, params: LayoutStaticParams }) {
+  const { t } = await useSSRTranslation(params.locale);
+  initializeGlobalServerContexts(params);
 
   return (
-    <html lang={locale} dir={dir(locale)} className={`${roboto.variable} ${lily_script_one.variable}`}>
+    <html lang={params.locale} dir={dir(params.locale)} className={`${roboto.variable} ${lily_script_one.variable}`}>
       <head>
         <title>{t('metadata.document.title')}</title>
         <meta name="author" content="Diogo Pereira" />

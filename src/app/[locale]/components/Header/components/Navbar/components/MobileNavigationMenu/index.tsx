@@ -6,7 +6,7 @@ import { LocaleSelectInput } from '../../../../../../../components/LocaleSelectI
 
 export function MobileNavigationMenu(): JSX.Element {
   return (
-    <div className='relative'>
+    <div className='relative mmd:hidden'>
       <MobileNavigationMenuClient>
         {/** Server side components to render in navigation mobile menu */}
         <MobileWorkWithMeButton />

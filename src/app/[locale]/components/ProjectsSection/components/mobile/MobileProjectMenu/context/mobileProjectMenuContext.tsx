@@ -27,7 +27,7 @@ export function MobileMenuProvider({ children }: { children: JSX.Element | JSX.E
       projectRepositoryUrl: '',
       projectIconUrl: '',
       technologies: [],
-      projectThumbImageUrl: '',
+      projectThumbImageUrl: '/image-initial-placeholder.png',
       createdAt: new Date()
     }
   });
