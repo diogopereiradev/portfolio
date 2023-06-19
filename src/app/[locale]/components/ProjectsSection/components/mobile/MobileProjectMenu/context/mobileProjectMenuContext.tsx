@@ -1,54 +1,24 @@
 'use client';
 import React, { createContext, useState } from 'react';
-import { ProjectData } from '../../../../@types/projectMenu';
 
-type MobileMenuContextProps = {
+type ContextProps = {
   isOpen: boolean,
-  data: ProjectData,
   openMenu: () => void,
-  closeMenu: () => void,
-  updateMenuData: (data: ProjectData) => void;
+  closeMenu: () => void
 };
 
-export const MobileProjectMenuContext = createContext<MobileMenuContextProps>({} as MobileMenuContextProps);
+export const MobileProjectMenuContext = createContext<ContextProps>({} as ContextProps);
 
-type ProviderStateData = {
-  isOpen: boolean, 
-  data: ProjectData
-};
+export function MobileProjectMenuProvider({ children }: { children: JSX.Element | JSX.Element[] }): JSX.Element {
+  const [isOpen, setIsOpen] = useState(false);
 
-export function MobileMenuProvider({ children }: { children: JSX.Element | JSX.Element[] }): JSX.Element {
-  const [menuData, setMenuData] = useState<ProviderStateData>({
-    isOpen: false,
-    data: {
-      name: '',
-      description: {},
-      projectLiveUrl: '',
-      projectRepositoryUrl: '',
-      projectIconUrl: '',
-      technologies: [],
-      projectThumbImageUrl: '/image-initial-placeholder.png',
-      createdAt: new Date()
-    }
-  });
+  const openMenu = () => setIsOpen(true);
 
-  const updateMenuData = (data: ProjectData) => {
-    setMenuData(oldData => ({ ...oldData, data }));
-  };
+  const closeMenu = () => setIsOpen(false);
 
-  const openMenu = () => {
-    setMenuData(oldData => ({ ...oldData, isOpen: true }));
-  };
-
-  const closeMenu = () => {
-    setMenuData(oldData => ({ ...oldData, isOpen: false }));
-  };
-  
   return(
-    <MobileProjectMenuContext.Provider value={{ isOpen: menuData.isOpen, data: menuData.data, openMenu, closeMenu, updateMenuData }}>
-      <div>
-        {children}
-      </div>
+    <MobileProjectMenuContext.Provider value={{ isOpen, openMenu, closeMenu }}>
+      {children}
     </MobileProjectMenuContext.Provider>
   );
 }

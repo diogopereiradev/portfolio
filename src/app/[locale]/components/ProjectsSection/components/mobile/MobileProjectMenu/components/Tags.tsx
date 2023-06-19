@@ -1,10 +1,7 @@
-'use client';
 import React from 'react';
-import { useMobileProjectMenu } from '../hooks/useMobileProjectMenu';
+import { ProjectCardTecnhology } from '../../../../@types/projectMenu';
 
-export function Tags(): JSX.Element {
-  const { data: { technologies } } = useMobileProjectMenu();
-
+export function Tags({ technologies }: { technologies: ProjectCardTecnhology[] }): JSX.Element {
   return (
     <div className='flex flex-wrap items-center gap-[5px] px-[30px] mt-[20px]'>
       <p className='text-primary-400 text-[15px]'>Tags:</p>

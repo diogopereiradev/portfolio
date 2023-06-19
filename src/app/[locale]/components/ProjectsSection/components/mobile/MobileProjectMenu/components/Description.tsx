@@ -1,12 +1,9 @@
-'use client';
 import React from 'react';
-import { useMobileProjectMenu } from '../hooks/useMobileProjectMenu';
-import { useLocale } from '../../../../../../../../shared/hooks/useLocale';
+import { useSSRLocale } from '../../../../../../../../shared/hooks/useSSRLocale';
+import { ProjectData } from '../../../../@types/projectMenu';
 
-export function Description(): JSX.Element {
-  const getLocale = useLocale();
-  const { data: { description } } = useMobileProjectMenu();
-  const locale = getLocale();
+export function Description({ description }: Pick<ProjectData, 'description'>): JSX.Element {
+  const locale = useSSRLocale();
 
   return (
     <div className='px-[30px] mt-[20px]'>

@@ -1,28 +1,27 @@
-'use client';
 import React from 'react';
-import { useClientTranslation } from '../../../../../../../shared/hooks/useClientTranslation';
-import { useMobileProjectMenu } from './hooks/useMobileProjectMenu';
+import { ProjectData } from '../../../@types/projectMenu';
+import { Client } from './client';
 
 import { Banner } from './components/Banner';
 import { Links } from './components/Links';
 import { Title } from './components/Title';
 import { Description } from './components/Description';
 import { Tags } from './components/Tags';
+import { ViewProjectButton } from './components/ViewProjectButton';
 
-export function MobileProjectMenu(): JSX.Element {
-  const { t } = useClientTranslation();
-  const { isOpen, data: { projectLiveUrl } } = useMobileProjectMenu();
-
+export function MobileProjectMenu({ data }: { data: ProjectData }): JSX.Element {
   return (
-    <div className={`fixed left-0 top-0 flex flex-col w-screen h-full bg-secondary-500 duration-300 ${isOpen ? 'top-0' : 'top-[100vh] opacity-0'} z-[9999]`}>
-      <Banner />
-      <Links />
-      <Title />
-      <Description />
-      <Tags />
-      <div className='absolute bottom-[40px] right-[40px]'>
-        <a href={projectLiveUrl} target='_blank' rel='noreferrer' className='px-[25px] py-[15px] text-primary-200 hover:text-primary-300 bg-primary-200 hover:bg-primary-300 active:bg-primary-400 rounded-full'>{t('projects.section.project.mobile.menu.viewproject.button')}</a>
-      </div>
-    </div>
+    <Client>
+      <Banner thumbUrl={data.projectThumbImageUrl}/>
+      <Links repositoryUrl={data.projectRepositoryUrl}/>
+      <Title 
+        name={data.name} 
+        projectIconUrl={data.projectIconUrl || ''} 
+        createdAt={data.createdAt}
+      />
+      <Description description={data.description}/>
+      <Tags technologies={data.technologies}/>
+      <ViewProjectButton projectLiveUrl={data.projectLiveUrl}/>
+    </Client>
   );
 }
