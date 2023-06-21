@@ -7,7 +7,7 @@ module.exports = {
   ],
   theme: {
     screens: {
-      '3xl': '1366px',
+      '3xl': '1566px',
       '2xl': '1280px',
       xl: '900px',
       lg: '768px',
@@ -57,8 +57,18 @@ module.exports = {
         }
       },
       fontFamily: {
-        text: ['var(--font-roboto)', 'var(--font-inter)', 'open-sans', 'sans-serif'],
-        title: ['var(--font-lily)', 'open-sans', 'sans-serif']
+        text: [ 'var(--font-roboto)', 'var(--font-inter)', 'open-sans', 'sans-serif' ],
+        title: [ 'var(--font-lily)', 'open-sans', 'sans-serif' ]
+      },
+      keyframes: {
+        pulse: {
+          '0%, 100%': {
+            opacity: 0.3
+          },
+          '50%': {
+            opacity: 0.05
+          }
+        }
       }
     }
   },

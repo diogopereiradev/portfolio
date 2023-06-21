@@ -19,7 +19,7 @@ type LayoutStaticParams = {
 function initializeGlobalServerContexts(params: LayoutStaticParams) {
   // Set current URL Pathname to global server context
   const headersList = headers();
-  setPathname(headersList.get('pathname') || '');
+  setPathname(headersList.get('x-url') || '');
   // Initialize server components global locale context 
   setServerLocale(params.locale);
 }
