@@ -22,7 +22,7 @@ async function DesktopRoot(): JSX.Element {
   const { t } = await useSSRTranslation();
 
   return (
-    <div className="relative hidden mmd:flex items-center w-full py-44">
+    <div className="relative hidden mmd:flex items-center w-full mmd:py-44 3xl:py-64">
       <div className="mmd:hidden 2xl:block absolute right-[-200px] top-[50%] translate-y-[-50%] w-[300px] h-[300px] bg-primary-100 blur-[50px] opacity-[0.05] rounded-full animate-pulse"></div>
       <div className="flex flex-col xl:pl-[100px] mmd:pl-[60px]">
         <h2 className="relative 3xl:text-[160px] xl:text-[120px] mmd:text-[12vw] before:absolute before:xl:left-[-20%] before:mmd:left-[-15%] before:3xl:top-[100%] before:xl:top-[72%] before:mmd:top-[60%] before:xl:w-[110%] before:mmd:w-[100%] before:3xl:h-[140%] before:xl:h-[130%] before:mmd:h-[100%] before:bg-primary-400 before:rounded-r-full before:z-[-1]">Diogo Pereira</h2>
