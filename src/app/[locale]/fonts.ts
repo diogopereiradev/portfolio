@@ -1,55 +1,13 @@
-import localFont from 'next/font/local';
+import { Roboto, Inter } from 'next/font/google';
 
-export const roboto = localFont({
-  src: [
-    {
-      path: './fonts/Roboto-Regular.ttf',
-      weight: '400',
-      style: 'normal'
-    },
-    {
-      path: './fonts/Roboto-Medium.ttf',
-      weight: '500',
-      style: 'normal'
-    },
-    {
-      path: './fonts/Roboto-Bold.ttf',
-      weight: '700',
-      style: 'normal'
-    },
-    {
-      path: './fonts/Roboto-Black.ttf',
-      weight: '900',
-      style: 'normal'
-    }
-  ],
-  preload: true,
+export const roboto = Roboto({
+  weight: ['400', '500', '700', '900'],
+  subsets: ['latin'],
   variable: '--font-roboto'
 });
 
-export const inter = localFont({
-  src: [
-    {
-      path: './fonts/Inter-Regular.ttf',
-      weight: '400',
-      style: 'normal'
-    },
-    {
-      path: './fonts/Inter-Medium.ttf',
-      weight: '500',
-      style: 'normal'
-    },
-    {
-      path: './fonts/Inter-Bold.ttf',
-      weight: '700',
-      style: 'normal'
-    },
-    {
-      path: './fonts/Inter-Black.ttf',
-      weight: '900',
-      style: 'normal'
-    }
-  ],
-  preload: true,
+export const inter = Inter({
+  weight: ['400', '500', '600', '900'],
+  subsets: ['latin'],
   variable: '--font-inter'
 });
