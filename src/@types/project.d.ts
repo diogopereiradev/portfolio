@@ -1,4 +1,4 @@
-import { SupportedLanguages } from '../../../../../shared/i18n/settings';
+import { SupportedLanguages } from '../shared/i18n/settings';
 
 export type ProjectCardTecnhology = {
   label: string,

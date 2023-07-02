@@ -17,58 +17,48 @@ module.exports = {
     },
     extend: {
       colors: {
-        background: '#090909',
+        background: '#08101e',
         primary: {
-          100: '#696cff',
-          200: '#5959e3',
-          300: '#4b4bc9',
-          400: '#3d3dad',
-          500: '#313194',
-          0: '#373966'
+          100: '#22ecce',
+          200: '#23d6bb',
+          300: '#23c7af',
+          400: '#1ab09a',
+          500: '#149985',
+          0: '#5b9ec533'
         },
         secondary: {
-          100: '#252525',
-          200: '#202020',
-          300: '#171717',
-          400: '#131313',
-          500: '#111111',
-          0: '#12121266'
+          100: '#162440',
+          200: '#121e36',
+          300: '#0f192e',
+          400: '#0b1324',
+          500: '#09101f',
+          0: '#463F6733'
         },
         scrollbar: {
           track: 'transparent',
-          thumb: '#303030'
+          thumb: '#463F67'
         },
-        outline: '#4949cc'
+        outline: '#23d6bb33'
       },
       textColor: {
         primary: {
           100: '#f0f0f0',
-          200: '#d3d3d3',
-          300: '#c8c8c8',
-          400: '#8a8a8a',
-          500: '#707070'
+          200: '#919ba3',
+          300: '#788187',
+          400: '#5d676e',
+          500: '#454e54'
         },
         secondary: {
-          100: '#696cff',
-          200: '#5959e3',
-          300: '#4b4bc9',
-          400: '#3d3dad',
-          500: '#313194'
+          100: '#22ecce',
+          200: '#23d6bb',
+          300: '#23c7af',
+          400: '#1ab09a',
+          500: '#149985'
         }
       },
       fontFamily: {
-        text: [ 'var(--font-roboto)', 'var(--font-inter)', 'open-sans', 'sans-serif' ],
-        title: [ 'var(--font-lily)', 'open-sans', 'sans-serif' ]
-      },
-      keyframes: {
-        pulse: {
-          '0%, 100%': {
-            opacity: 0.3
-          },
-          '50%': {
-            opacity: 0.05
-          }
-        }
+        text: [ 'var(--font-roboto)', 'Inter', 'open-sans', 'sans-serif' ],
+        title: [ 'var(--font-inter)', 'open-sans', 'sans-serif' ]
       }
     }
   },

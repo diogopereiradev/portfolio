@@ -27,9 +27,29 @@ export const roboto = localFont({
   variable: '--font-roboto'
 });
 
-
-export const lily_script_one = localFont({
-  src: './fonts/LilyScriptOne.ttf',
+export const inter = localFont({
+  src: [
+    {
+      path: './fonts/Inter-Regular.ttf',
+      weight: '400',
+      style: 'normal'
+    },
+    {
+      path: './fonts/Inter-Medium.ttf',
+      weight: '500',
+      style: 'normal'
+    },
+    {
+      path: './fonts/Inter-Bold.ttf',
+      weight: '700',
+      style: 'normal'
+    },
+    {
+      path: './fonts/Inter-ExtraBold.ttf',
+      weight: '800',
+      style: 'normal'
+    }
+  ],
   preload: false,
-  variable: '--font-lily'
+  variable: '--font-inter'
 });

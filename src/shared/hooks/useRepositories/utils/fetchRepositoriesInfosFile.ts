@@ -1,7 +1,7 @@
 import { base64Decoder } from '../../../utils/base64Decoder';
 import { base64Repair } from '../../../utils/base64Repair';
 import settings from '../settings.json';
-import { ProjectData } from '../../../../app/[locale]/components/ProjectsSection/@types/projectMenu';
+import { ProjectData } from '../../../../@types/project';
 
 async function fetchContents(repositoryName: string) {
   const { API_URL, OWNER, CACHE_REVALIDATE_SECONDS, REPOSITORY_INFOS_FILENAME } = settings;

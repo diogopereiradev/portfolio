@@ -1,4 +1,4 @@
-import { ProjectData } from '../../../app/[locale]/components/ProjectsSection/@types/projectMenu';
+import { ProjectData } from '../../../@types/project';
 import { fetchAllRepositories } from './utils/fetchAllRepositories';
 import { fetchRepositoriesInfosFile } from './utils/fetchRepositoriesInfosFile';
 

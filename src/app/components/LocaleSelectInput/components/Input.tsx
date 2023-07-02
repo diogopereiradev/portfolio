@@ -10,7 +10,7 @@ export function Input(props: { data: LocaleSelectInputProps, state: [boolean, Re
   return(
     <button
       onClick={() => setIsOpen((old) => !old)}
-      className='flex items-center relative bg-secondary-300 hover:bg-secondary-400 rounded-[10px] border-[2px] border-[#303030] border-solid hover:border-primary-200 duration-150 cursor-pointer px-[15px]'
+      className='flex items-center relative bg-secondary-300 hover:bg-secondary-400 rounded-[10px] border-[2px] border-secondary-200 border-solid hover:border-primary-200 duration-150 cursor-pointer px-[15px]'
       style={{ 
         width: props.data.width === 'full'? '100%' : `${props.data.width}px`,
         height: props.data.height === 'default'? '45px' : `${props.data.height}px`

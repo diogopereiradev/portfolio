@@ -7,6 +7,9 @@
   "metadata.page.description": "Front-end Developer specialized in React.js, Next.js, Typescript, searching for new knowledge.",
 
   "navbar.mobile.menu.workwithme.button": "Work with me",
+  "navbar.aboutme.label": "About me",
+  "navbar.skills.label": "Skills",
+  "navbar.projects.label": "Projects",
 
   "header.title.description": "Front-end Developer",
 
