@@ -45,8 +45,8 @@ export const inter = localFont({
       style: 'normal'
     },
     {
-      path: './fonts/Inter-ExtraBold.ttf',
-      weight: '800',
+      path: './fonts/Inter-Black.ttf',
+      weight: '900',
       style: 'normal'
     }
   ],
