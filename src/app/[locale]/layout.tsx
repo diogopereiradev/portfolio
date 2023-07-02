@@ -1,16 +1,21 @@
 import '../globals.css';
 import React from 'react';
 import { dir } from 'i18next';
+import { headers } from 'next/headers';
+import { icons } from './icons';
 import { roboto, inter } from './fonts';
 import { setPathname } from '../../shared/contexts/pathnameContext';
 import { setServerLocale } from '../../shared/contexts/localeServerContext';
 import { useSSRTranslation } from '../../shared/hooks/useSSRTranslation';
 import { supportedLanguages } from '../../shared/i18n/settings';
-import { headers } from 'next/headers';
 
 export async function generateStaticParams() {
   return supportedLanguages.map(locale => ({ locale }));
 }
+
+export const metadata = {
+  icons
+};
 
 type LayoutStaticParams = {
   locale: string
@@ -32,13 +37,16 @@ export default async function RootLayout({ children, params }: { children: React
     <html lang={params.locale} dir={dir(params.locale)} className={`${roboto.variable} ${inter.variable}`}>
       <head>
         <title>{t('metadata.document.title')}</title>
-        <meta name="author" content="Diogo Pereira" />
-        <meta name="description" content={t('metadata.page.description')} />
-        <meta name="robots" content="index,follow" />
-        <meta name="keywords" content="developer,frontend,website,software,portfolio,diogo,pereira,desenvolvedor,site" />
-        <meta name="og:title" content={t('metadata.og.title')} />
-        <meta name="og:description" content={t('metadata.og.description')} />
-        <meta name="og:image" content="https://null.null.com" />
+        <meta name='author' content='Diogo Pereira' />
+        <meta name='description' content={t('metadata.page.description')} />
+        <meta name='robots' content='index,follow' />
+        <meta name='keywords' content='developer,frontend,website,software,portfolio,diogo,pereira,desenvolvedor,site' />
+        <meta name='og:title' content={t('metadata.og.title')} />
+        <meta name='og:description' content={t('metadata.og.description')} />
+        <meta name='og:image' content='https://null.null.com' />
+        <meta name='msapplication-TileColor' content='#08101e' />
+        <meta name='theme-color' content='#08101e' />
+        <meta name='msapplication-config' content='/favicons/browserconfig.xml' />
       </head>
       <body>
         {children}
