@@ -23,7 +23,7 @@ export const roboto = localFont({
       style: 'normal'
     }
   ],
-  preload: false,
+  preload: true,
   variable: '--font-roboto'
 });
 
@@ -50,6 +50,6 @@ export const inter = localFont({
       style: 'normal'
     }
   ],
-  preload: false,
+  preload: true,
   variable: '--font-inter'
 });
