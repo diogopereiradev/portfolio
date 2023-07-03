@@ -5,8 +5,8 @@ import { SocialLink } from './components/SocialLink';
 
 export function FloatingSocialLinks(): JSX.Element {
   return (
-    <div className='fixed bottom-0 left-[60px] flex flex-col items-center gap-[15px]'>
-      <div className='flex flex-col gap-[9px] ml-[2px]'>
+    <div className='fixed bottom-0 left-[60px] flex flex-col items-center gap-[20px]'>
+      <div className='flex flex-col gap-[12px] ml-[2px]'>
         <SocialLink.Root to='https://github.com/FhillSlinger'>
           <SocialLink.Icon size={25} color='text-primary-200'>{RiGithubLine}</SocialLink.Icon>
         </SocialLink.Root>
@@ -20,7 +20,7 @@ export function FloatingSocialLinks(): JSX.Element {
           <SocialLink.Icon size={22} color='text-primary-200'>{FaDiscord}</SocialLink.Icon>
         </SocialLink.Root>
       </div>
-      <hr className='h-[70px] w-[1px] bg-[#a1c1dc]' />
+      <hr className='h-[80px] w-[1px] bg-[#a1c1dc]' />
     </div>
   );
 }

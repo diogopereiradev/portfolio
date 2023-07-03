@@ -12,6 +12,7 @@ export function NavigationLink({ to, children }: NavigationLinkProps): JSX.Eleme
       href={to}
       className='
         relative
+        font-[500]
         text-[15px]
         whitespace-nowrap
         before:absolute 
