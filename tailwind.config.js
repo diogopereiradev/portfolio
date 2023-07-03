@@ -13,18 +13,19 @@ module.exports = {
       lg: '768px',
       mmd: '568px',
       md: '420px',
-      sm: '320px'
+      sm: '320px',
+      base: '0px'
     },
     extend: {
       colors: {
-        background: '#08101e',
+        background: '#0b1529',
         primary: {
           100: '#22ecce',
           200: '#23d6bb',
           300: '#23c7af',
           400: '#1ab09a',
           500: '#149985',
-          0: '#5b9ec533'
+          0: '#22ecce33'
         },
         secondary: {
           100: '#1c2c4d',
@@ -32,21 +33,21 @@ module.exports = {
           300: '#121e36',
           400: '#0e172b',
           500: '#0b1426',
-          0: '#19274533'
+          0: '#1c2c4d33'
         },
         scrollbar: {
           track: 'transparent',
-          thumb: '#463F67'
+          thumb: '#1c2c4d'
         },
         outline: '#23d6bb33'
       },
       textColor: {
         primary: {
-          100: '#f0f0f0',
-          200: '#919ba3',
-          300: '#788187',
-          400: '#5d676e',
-          500: '#454e54'
+          100: '#8d98a1',
+          200: '#516573',
+          300: '#40557d',
+          400: '#23324d',
+          500: '#252e38'
         },
         secondary: {
           100: '#22ecce',
@@ -54,10 +55,17 @@ module.exports = {
           300: '#23c7af',
           400: '#1ab09a',
           500: '#149985'
+        },
+        white: {
+          100: '#f0f0f0',
+          200: '#d3d3d3',
+          300: '#c8c8c8',
+          400: '#a8a8a8',
+          500: '#909090'
         }
       },
       fontFamily: {
-        text: [ 'var(--font-roboto)', 'Inter', 'open-sans', 'sans-serif' ],
+        text: [ 'var(--font-roboto)', 'var(--font-inter)', 'open-sans', 'sans-serif' ],
         title: [ 'var(--font-inter)', 'open-sans', 'sans-serif' ]
       }
     }

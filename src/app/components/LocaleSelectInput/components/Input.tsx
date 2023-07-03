@@ -17,10 +17,10 @@ export function Input(props: { data: LocaleSelectInputProps, state: [boolean, Re
       }}
     >
       <div className='flex items-center gap-[10px]'>
-        <FaGlobeAmericas className='text-primary-200' size={19}/>
-        <p className='text-[14px] text-primary-200'>{props.children}</p>
+        <FaGlobeAmericas className='text-primary-100' size={19}/>
+        <p className='text-[14px] text-primary-100'>{props.children}</p>
       </div>
-      <AiFillCaretDown className={`text-primary-400 absolute right-[10px] top-[50%] translate-y-[-50%] duration-150 ${isOpen? 'rotate-[180deg]' : 'rotate-0'}`} size={16}/>
+      <AiFillCaretDown className={`text-primary-300 absolute right-[10px] top-[50%] translate-y-[-50%] duration-150 ${isOpen? 'rotate-[180deg]' : 'rotate-0'}`} size={16}/>
     </button>
   );
 }

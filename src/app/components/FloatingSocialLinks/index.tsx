@@ -8,16 +8,16 @@ export function FloatingSocialLinks(): JSX.Element {
     <div className='fixed bottom-0 left-[60px] flex flex-col items-center gap-[20px]'>
       <div className='flex flex-col gap-[12px] ml-[2px]'>
         <SocialLink.Root to='https://github.com/FhillSlinger'>
-          <SocialLink.Icon size={25} color='text-primary-200'>{RiGithubLine}</SocialLink.Icon>
+          <SocialLink.Icon size={25} color='text-primary-100'>{RiGithubLine}</SocialLink.Icon>
         </SocialLink.Root>
         <SocialLink.Root to='https://codepen.io/fhillslinger/pens/public'>
-          <SocialLink.Icon size={25} color='text-primary-200'>{RiCodepenFill}</SocialLink.Icon>
+          <SocialLink.Icon size={25} color='text-primary-100'>{RiCodepenFill}</SocialLink.Icon>
         </SocialLink.Root>
         <SocialLink.Root to='https://www.linkedin.com/in/fhill-slinger/'>
-          <SocialLink.Icon size={23} color='text-primary-200'>{RiLinkedinFill}</SocialLink.Icon>
+          <SocialLink.Icon size={23} color='text-primary-100'>{RiLinkedinFill}</SocialLink.Icon>
         </SocialLink.Root>
         <SocialLink.Root to='https://discord.com/users/882178309205671956'>
-          <SocialLink.Icon size={22} color='text-primary-200'>{FaDiscord}</SocialLink.Icon>
+          <SocialLink.Icon size={22} color='text-primary-100'>{FaDiscord}</SocialLink.Icon>
         </SocialLink.Root>
       </div>
       <hr className='h-[80px] w-[1px] bg-[#a1c1dc]' />

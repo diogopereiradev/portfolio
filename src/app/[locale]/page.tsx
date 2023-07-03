@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSSRTranslation } from '../../shared/hooks/useSSRTranslation';
 
+import { MouseShadow } from '../components/MouseShadow';
 import { FloatingSocialLinks } from '../components/FloatingSocialLinks';
 import { Header } from './components/Header';
 
@@ -20,7 +21,12 @@ export default function Home() {
   return (
     <main className='flex flex-col relative max-w-[2120px] m-[0_auto]'>
       <div className='hidden'>
-        <FloatingSocialLinks />
+        <div className='hidden lg:block'>
+          <MouseShadow />
+        </div>
+        <div className='hidden xl:block'>
+          <FloatingSocialLinks />
+        </div>
         <Header />
       </div>
       <UnderDevelopmentMessage />

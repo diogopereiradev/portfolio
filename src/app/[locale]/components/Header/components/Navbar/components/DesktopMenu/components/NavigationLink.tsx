@@ -14,6 +14,7 @@ export function NavigationLink({ to, children }: NavigationLinkProps): JSX.Eleme
         relative
         font-[500]
         text-[15px]
+        text-primary-100
         whitespace-nowrap
         before:absolute 
         before:left-[5px] 
