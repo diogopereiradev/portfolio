@@ -16,7 +16,7 @@ export function Input(props: { data: LocaleSelectInputProps, state: [boolean, Re
         height: props.data.height === 'default'? '45px' : `${props.data.height}px`
       }}
     >
-      <div className='flex items-center gap-[10px]'>
+      <div className='flex justify-center items-center gap-[10px]'>
         <FaGlobeAmericas className='text-primary-100' size={19}/>
         <p className='text-[14px] text-primary-100'>{props.children}</p>
       </div>

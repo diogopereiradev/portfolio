@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     screens: {
       '3xl': '1566px',
-      '2xl': '1280px',
+      '2xl': '1180px',
       xl: '900px',
       lg: '768px',
       mmd: '568px',
@@ -43,7 +43,7 @@ module.exports = {
       },
       textColor: {
         primary: {
-          100: '#8d98a1',
+          100: '#798894',
           200: '#516573',
           300: '#40557d',
           400: '#23324d',
@@ -65,8 +65,8 @@ module.exports = {
         }
       },
       fontFamily: {
-        text: [ 'var(--font-roboto)', 'var(--font-inter)', 'open-sans', 'sans-serif' ],
-        title: [ 'var(--font-inter)', 'open-sans', 'sans-serif' ]
+        text: [ 'var(--font-roboto)', 'open-sans', 'sans-serif' ],
+        title: [ 'var(--font-calibre)', 'open-sans', 'sans-serif' ]
       }
     }
   },

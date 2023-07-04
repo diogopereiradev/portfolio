@@ -3,7 +3,7 @@ import React from 'react';
 import { dir } from 'i18next';
 import { headers } from 'next/headers';
 import { icons } from './icons';
-import { roboto, inter } from './fonts';
+import { calibre, roboto } from './fonts';
 import { setPathname } from '../../shared/contexts/pathnameContext';
 import { setServerLocale } from '../../shared/contexts/localeServerContext';
 import { useSSRTranslation } from '../../shared/hooks/useSSRTranslation';
@@ -34,7 +34,7 @@ export default async function RootLayout({ children, params }: { children: React
   initializeGlobalServerContexts(params);
 
   return (
-    <html lang={params.locale} dir={dir(params.locale)} className={`${roboto.variable} ${inter.variable}`}>
+    <html lang={params.locale} dir={dir(params.locale)} className={`${calibre.variable} ${roboto.variable}`}>
       <head>
         <title>{t('metadata.document.title')}</title>
         <meta name='author' content='Diogo Pereira' />

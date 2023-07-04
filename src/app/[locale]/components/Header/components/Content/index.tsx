@@ -1,51 +1,27 @@
 import React from 'react';
 import { useSSRTranslation } from '../../../../../../shared/hooks/useSSRTranslation';
+
 import { LinkButton } from './components/LinkButton';
-
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
-async function GrettingsTitle(): JSX.Element {
-  const { t } = await useSSRTranslation();
-  return <p className='font-title h-[60px] text-secondary-200 font-[500] text-[18px]'>Olá, meu nome é</p>;
-}
-
-function Title(): JSX.Element {
-  return (
-    <div>
-      <h3 className='h-[100px] base:text-[calc(17px+4vw)] lg:text-[5.1rem] text-white-100 font-[700]'>Diogo Pereira</h3>
-      <h3 className='h-[60px] base:text-[calc(17px+3vw)] lg:text-[4.1rem] text-primary-200 font-[700] base:mt-[-50px] mmd:mt-[-20px] break-all'>Dev Front-End</h3>
-    </div>
-  );
-}
-
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
-async function Description(): JSX.Element {
-  const { t } = await useSSRTranslation();
-
-  return (
-    <p className='font-[400] text-[1.1rem] text-primary-100 max-w-[550px] ml-[3px] break-words pr-[20px]'>
-      Quarta parte da luta entre PHP e Javascript... Javascript pega o PHP e mete a porrada depois ele bane o PHP eternamente da mão dos Devs já que ele havia se tornado um vicio de muitos desenvolvedores.
-    </p>
-  );
-}
-
-function ControlButtons(): JSX.Element {
-  return (
-    <div className='relative top-[20px] flex flex-wrap gap-[20px] ml-[3px]'>
-      <LinkButton to='https://github.com/FhillSlinger'>Github</LinkButton>
-      <LinkButton to='/diogopereira-cv.pdf'>CV</LinkButton>
-    </div>
-  );
-}
 
 export function Content(): JSX.Element {
   return (
-    <div className='relative base:p-[50px] xl:p-[0px] xl:left-[200px] 3xl:left-[350px] top-[-50px] flex flex-col gap-[25px]'>
-      <GrettingsTitle />
-      <Title />
-      <Description />
-      <ControlButtons />
+    <div className='flex items-center relative w-full h-full base:pl-[10%] 2xl:pl-[20%] pr-[50px]'>
+      <div className='flex flex-col gap-[35px] base:mt-[0px] xl:mt-[-50px] base:pt-[100px] mmd:pt-[0px]'>
+        <p className='text-[18px] font-[500] text-secondary-200 leading-[1] pl-[4px]'>Hi, my name is</p>
+        <div>
+          <h2 className='base:text-[calc(25px+5.5vw)] xl:text-[80px] text-white-300 leading-[1]'>Diogo Pereira</h2>
+          <h2 className='base:text-[calc(25px+5.5vw)] xl:text-[75px] text-primary-100 leading-[1]'>Desenvolvedor Front-End</h2>
+        </div>
+        <p className='font-[400] base:text-[15px] xl:text-[16px] text-primary-100 max-w-[600px] pl-[4px] mt-[-10px]'>
+          Testando, blablabla, aasds este é um teste e isso é apenas um texto de mock
+          pois preciso de informações informativas para mostras em tela e informar quem está
+          criando essa página, é apenas um teste aaaa teste aaa teste.
+        </p>
+        <div className='relative top-[10px] flex flex-wrap gap-[20px]'>
+          <LinkButton to='https://github.com/FhillSlinger'>Github</LinkButton>
+          <LinkButton to='/diogopereira-cv.pdf'>CV</LinkButton>
+        </div>
+      </div>
     </div>
   );
 }

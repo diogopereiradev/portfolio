@@ -24,7 +24,7 @@ export default function Home() {
         <div className='hidden lg:block'>
           <MouseShadow />
         </div>
-        <div className='hidden xl:block'>
+        <div className='hidden 2xl:block'>
           <FloatingSocialLinks />
         </div>
         <Header />
