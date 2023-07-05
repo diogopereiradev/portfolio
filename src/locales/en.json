@@ -11,7 +11,9 @@
   "navbar.skills.label": "Skills",
   "navbar.projects.label": "Projects",
 
+  "header.title.span": "Hi, my name is",
   "header.title.description": "Front-end Developer",
+  "header.description": "I have been specializing primarily in Front-End development to ensure excellent user experiences. I am always seeking new opportunities to apply my knowledge. I enjoy studying other areas in my spare time.",
 
   "aboutme.section.title": "About me",
   "aboutme.section.description.paragraph.1": "Since I was 14 years old, I have been involved in the world of programming. It all started when I began creating plugins for Minecraft, and I quickly found myself immersed in this fascinating universe. For a while, I also had the opportunity to work on a Minecraft server, which provided me with valuable experiences.",

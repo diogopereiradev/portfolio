@@ -5,7 +5,7 @@ import { SocialLink } from './components/SocialLink';
 
 export function FloatingSocialLinks(): JSX.Element {
   return (
-    <div className='fixed bottom-0 left-[60px] flex flex-col items-center gap-[20px]'>
+    <div className='fixed bottom-0 left-[43px] flex flex-col items-center gap-[20px] z-[9999]'>
       <div className='flex flex-col gap-[12px] ml-[2px]'>
         <SocialLink.Root to='https://github.com/FhillSlinger'>
           <SocialLink.Icon size={25} color='text-primary-100'>{RiGithubLine}</SocialLink.Icon>

@@ -4,6 +4,7 @@ import { useSSRTranslation } from '../../shared/hooks/useSSRTranslation';
 import { MouseShadow } from '../components/MouseShadow';
 import { FloatingSocialLinks } from '../components/FloatingSocialLinks';
 import { Header } from './components/Header';
+import { AboutMe } from './components/AboutMe';
 
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
@@ -28,6 +29,7 @@ export default function Home() {
           <FloatingSocialLinks />
         </div>
         <Header />
+        <AboutMe />
       </div>
       <UnderDevelopmentMessage />
     </main>
