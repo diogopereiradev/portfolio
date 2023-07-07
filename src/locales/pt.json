@@ -29,7 +29,7 @@
   "experiences.section.skill.menu.experience.month.text": "mes",
 
   "experiences.section.skill.menu.description.reactjs": "Eu optei por escolher React.js para ter como tecnologia principal de estudos porque eu gosto da diversidade que ele traz, caso eu queira criar uma aplicação mobile eu posso utilizar o React Native que é muito parecido com o Reactjs em termos de estruturação então estudar React.js me permite ter uma diversidade maior de conhecimento em mãos.",
-  "experiences.section.skill.menu.description.redux": "Eu tive poucas interações com o Redux, mas eu tive a oportunidade de aprender a implementa-lo e quando usa-lo.",
+  "experiences.section.skill.menu.description.redux": "Eu tive poucas interações com o Redux, ele é uma ótima ferramenta para gerenciar estados \"globais\", durante meu uso eu tive a oportunidade de aprender a implementa-lo e quando usa-lo.",
   "experiences.section.skill.menu.description.nextjs": "O Next.js é uma ferramenta quase que essencial para um desenvolvedor React.js, pois te permite ter um controle muito maior da sua aplicação, tanto em performance como em SEO, pois ele permite o SSR, que garante que seu conteúdo apareça para os robos de indexação do google.",
   "experiences.section.skill.menu.description.tailwind": "O Tailwind é um framework CSS muito prático em questão de produtividade, mesmo que as vezes possa parecer uma bagunça, mas nada que uma boa separação de componentes não resolva.",
   "experiences.section.skill.menu.description.styledcomponents": "Utilizei Styled-Components por um bom tempo antes de conhecer o Tailwind, ele te permite separar mais os componentes já você pode aplicar os estilos separadamente diferente do Tailwind, ele ainda é uma escolha interessante mas usaria em poucos projetos.",

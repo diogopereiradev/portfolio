@@ -6,6 +6,7 @@ import { FloatingSocialLinks } from '../components/FloatingSocialLinks';
 import { Header } from './components/Header';
 import { AboutMe } from './components/AboutMe';
 import { Experiences } from './components/Experiences';
+import { MyProjects } from './components/MyProjects';
 
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
@@ -35,13 +36,14 @@ function Widgets(): JSX.Element {
 export default function Home() {
   return (
     <main className='flex flex-col relative max-w-[2120px] m-[0_auto]'>
-      {/* <div className='hidden'> */}
-      <Widgets />
-      <Header />
-      <AboutMe />
-      <Experiences />
-      {/* </div> */}
-      {/* <UnderDevelopmentMessage /> */}
+      <div className='hidden'>
+        <Widgets />
+        <Header />
+        <AboutMe />
+        <Experiences />
+        <MyProjects />
+      </div>
+      <UnderDevelopmentMessage />
     </main>
   );
 }
