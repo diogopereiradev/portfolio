@@ -1,4 +1,6 @@
 import React from 'react';
+import { FiGithub } from 'react-icons/fi';
+import { IoMdDocument } from 'react-icons/io';
 import { useSSRTranslation } from '../../../../../../shared/hooks/useSSRTranslation';
 
 import { LinkButton } from './components/LinkButton';
@@ -27,10 +29,16 @@ async function Description(): JSX.Element {
 
 function Buttons(): JSX.Element {
   return (
-    <div className='relative top-[10px] flex flex-wrap gap-[20px]'>
-      <LinkButton to='https://github.com/FhillSlinger'>Github</LinkButton>
-      <LinkButton to='/diogopereira-cv.pdf'>CV</LinkButton>
-    </div>
+    <>
+      <div className='relative top-[10px] hidden mmd:flex flex-wrap gap-[20px]'>
+        <LinkButton w={180} h={50} to='https://github.com/FhillSlinger'>Github</LinkButton>
+        <LinkButton w={180} h={50} to='/diogopereira-cv.pdf'>CV</LinkButton>
+      </div>
+      <div className='relative base:flex mmd:hidden gap-[15px]'>
+        <LinkButton w={55} h={55} to='https://github.com/FhillSlinger'><FiGithub size={20}/></LinkButton>
+        <LinkButton w={55} h={55} to='/diogopereira-cv.pdf'><IoMdDocument size={20}/></LinkButton>
+      </div>
+    </>
   );
 }
 

@@ -2,10 +2,12 @@ import React from 'react';
 
 type LinkButtonProps = {
   children: JSX.Element | JSX.Element[] | string,
-  to: string
+  to: string,
+  w: number,
+  h: number
 };
 
-export function LinkButton({ children, to }: LinkButtonProps): JSX.Element {
+export function LinkButton({ children, to, w, h }: LinkButtonProps): JSX.Element {
   return(
     <a 
       href={to}
@@ -13,8 +15,6 @@ export function LinkButton({ children, to }: LinkButtonProps): JSX.Element {
         flex 
         justify-center
         items-center
-        w-[180px] 
-        h-[50px] 
         rounded-[7px] 
         border-[3px] 
         border-solid 
@@ -28,6 +28,10 @@ export function LinkButton({ children, to }: LinkButtonProps): JSX.Element {
       '
       target='_blank'
       rel='noreferrer'
+      style={{
+        width: `${w}px`,
+        height: `${h}px`
+      }}
     >
       {children}
     </a>
