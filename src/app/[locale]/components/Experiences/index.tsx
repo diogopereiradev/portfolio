@@ -18,7 +18,7 @@ async function Title(): JSX.Element {
 
 export function Experiences(): JSX.Element {
   return (
-    <section className='flex justify-center pt-[90px] pb-[140px]'>
+    <section id='skills' className='flex justify-center pt-[90px] pb-[140px]'>
       <div className='flex base:max-w-full lg:max-w-[850px] flex-col gap-[60px] px-[30px]'>
         <Title />
         <ExperiencesContextProvider>

@@ -1,9 +1,0 @@
-.dynamic-project-card:not(.flex-row-reverse) > div:nth-child(2) {
-  right: 0;
-  align-items: flex-end;
-}
-
-.dynamic-project-card[class~='flex-row-reverse'] > div:nth-child(2) {
-  left: 0;
-  align-items: flex-start;
-}

@@ -38,7 +38,7 @@
   "experiences.section.skill.menu.description.git": "Git is a tool that greatly facilitates teamwork and project version control. It is undeniably one of the essential tools for a programmer who values their career.",
 
   "projects.section.title": "Projects",
-  "projects.section.description": "Click on the project card to view all available information.",
+  "projects.project.card.project.name.text": "Project name",
   "projects.section.viewmore.button": "View more",
   "projects.section.project.mobile.menu.viewproject.button": "View project",
 
