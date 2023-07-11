@@ -13,6 +13,7 @@ export function TechnologySelectButton({ data, selected }: { data: TechnologyDat
 
   useEffect(() => {
     if(selected) handleClick();
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

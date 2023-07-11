@@ -18,7 +18,7 @@ export function Thumbnail({ thumbnail }: { thumbnail: string }): JSX.Element {
           before:w-full
           before:h-full 
           before:rounded-[5px] 
-          before:bg-primary-500 
+          before:bg-secondary-100 
           before:opacity-[0.8] 
           before:duration-150 
           before:z-[1]

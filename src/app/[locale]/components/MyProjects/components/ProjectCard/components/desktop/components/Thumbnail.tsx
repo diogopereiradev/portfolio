@@ -16,7 +16,7 @@ export function Thumbnail({ thumbnail }: { thumbnail: string }): JSX.Element {
         xl:before:h-[280px]
         before:w-full 
         before:rounded-[5px] 
-        before:bg-primary-500 
+        before:bg-secondary-100 
         before:opacity-[0.6] 
         before:duration-150 
         hover:before:opacity-[0] 

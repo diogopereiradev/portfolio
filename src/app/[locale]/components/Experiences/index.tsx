@@ -2,7 +2,7 @@ import React from 'react';
 import { useSSRTranslation } from '../../../../shared/hooks/useSSRTranslation';
 import { ExperiencesContextProvider } from './context/experiencesContext';
 import { TechnologiesContent } from './components/TechnologiesContent';
-import { Technologies } from './components/Technologies';
+import { TechnologiesLoader } from './components/TechnologiesLoader';
 
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
@@ -23,7 +23,7 @@ export function Experiences(): JSX.Element {
         <Title />
         <ExperiencesContextProvider>
           <div className='flex base:flex-col lg:flex-row gap-[50px]'>
-            <Technologies />
+            <TechnologiesLoader />
             <TechnologiesContent />
           </div>
         </ExperiencesContextProvider>

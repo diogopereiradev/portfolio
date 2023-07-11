@@ -1,6 +1,7 @@
 'use client';
 import React from 'react';
 import { useClientTranslation } from '../../../../../../shared/hooks/useClientTranslation';
+import { useLocale } from '../../../../../../shared/hooks/useLocale';
 import { getExperienceTime } from '../../scripts/getExperienceTime';
 import { useExperiences } from '../../hooks/useExperiences';
 
@@ -26,12 +27,37 @@ function TechnologiesContentTitle(): JSX.Element {
 
 function TechnologiesDescription(): JSX.Element {
   const { data } = useExperiences();
-  return <p className='px-[0px] text-[16px] font-[400] text-primary-100'>{data.description}</p>;
+  const locale = useLocale();
+
+  return (
+    <>
+      <p className='px-[0px] text-[16px] font-[400] text-primary-100'>{data.description}</p>
+      <div className='flex flex-col gap-[10px]'>
+        <h3 className='px-[0px] text-[18px] font-[700] text-primary-100'>Conhecimentos:</h3>
+        <div className='flex base:gap-[18px] md:gap-[30px]'>
+          <ul className='flex flex-col gap-x-[25px] gap-y-[15px] list-disc marker:text-secondary-100 ml-[13px]'>
+            {data.knowledges.slice(0, 3).map(knowledge => (
+              <li key={Math.random()}>
+                <p className='px-[0px] text-[16px] font-[400] text-primary-100'>{knowledge.text[locale()]}</p>
+              </li>
+            ))}
+          </ul>
+          <ul className='flex flex-col gap-x-[25px] gap-y-[15px] list-disc marker:text-secondary-100 ml-[13px]'>
+            {data.knowledges.slice(3, 6).map(knowledge => (
+              <li key={Math.random()}>
+                <p className='px-[0px] text-[16px] font-[400] text-primary-100'>{knowledge.text[locale()]}</p>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </>
+  );
 }
 
 export function TechnologiesContent(): JSX.Element {
   return (
-    <div className='flex flex-col gap-[40px] base:pr-[0px] mmd:pr-[50px]'>
+    <div className='flex flex-col gap-[30px] base:pr-[0px] mmd:pr-[50px]'>
       <TechnologiesContentTitle />
       <TechnologiesDescription />
     </div>

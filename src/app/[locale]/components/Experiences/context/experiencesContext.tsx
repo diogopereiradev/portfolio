@@ -22,6 +22,7 @@ export function ExperiencesContextProvider({ children }: { children: JSX.Element
     data: {
       name: '',
       description: '',
+      knowledges: [],
       icon: <></>,
       techExperience: {
         started: new Date()

@@ -24,7 +24,7 @@ async function Title(): JSX.Element {
 // @ts-ignore
 async function Description(): JSX.Element {
   const { t } = await useSSRTranslation();
-  return <p className='font-[400] base:text-[15px] xl:text-[16px] text-primary-100 max-w-[600px] pl-[4px] mt-[-10px]'>{t('header.description')}</p>;
+  return <p className='font-[400] base:text-[16px] xl:text-[17px] text-primary-100 max-w-[600px] pl-[4px] mt-[-10px]'>{t('header.description')}</p>;
 }
 
 function Buttons(): JSX.Element {
