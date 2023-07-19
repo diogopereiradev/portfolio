@@ -4,6 +4,7 @@ import { IoMdDocument } from 'react-icons/io';
 import { useSSRTranslation } from '../../../../../../shared/hooks/useSSRTranslation';
 
 import { LinkButton } from './components/LinkButton';
+import { Client } from './client';
 
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
@@ -44,12 +45,12 @@ function Buttons(): JSX.Element {
 
 export function Content(): JSX.Element {
   return (
-    <div className='flex items-center relative w-full h-full base:pl-[30px] md:pl-[10%] 2xl:pl-[14%] 3xl:pl-[23%] pr-[30px]'>
+    <Client>
       <div className='flex flex-col gap-[35px] base:mt-[0px] xl:mt-[-50px] base:pt-[150px] mmd:pt-[0px]'>
         <Title />
         <Description />
         <Buttons />
       </div>
-    </div>
+    </Client>
   );
 }

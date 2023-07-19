@@ -3,6 +3,7 @@ import { useSSRTranslation } from '../../../../shared/hooks/useSSRTranslation';
 import { ExperiencesContextProvider } from './context/experiencesContext';
 import { TechnologiesContent } from './components/TechnologiesContent';
 import { TechnologiesLoader } from './components/TechnologiesLoader';
+import { Client } from './client';
 
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
@@ -18,7 +19,7 @@ async function Title(): JSX.Element {
 
 export function Experiences(): JSX.Element {
   return (
-    <section id='skills' className='flex justify-center pt-[90px] pb-[140px]'>
+    <Client>
       <div className='flex base:max-w-full lg:max-w-[850px] flex-col gap-[60px] px-[30px]'>
         <Title />
         <ExperiencesContextProvider>
@@ -28,6 +29,6 @@ export function Experiences(): JSX.Element {
           </div>
         </ExperiencesContextProvider>
       </div>
-    </section>
+    </Client>
   );
 }

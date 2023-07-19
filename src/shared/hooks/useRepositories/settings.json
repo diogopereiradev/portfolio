@@ -2,5 +2,5 @@
   "API_URL": "https://api.github.com",
   "OWNER": "FhillSlinger",
   "REPOSITORY_INFOS_FILENAME": "project.infos.json",
-  "CACHE_REVALIDATE_SECONDS": 600
+  "CACHE_REVALIDATE_SECONDS": 1200
 }

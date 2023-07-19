@@ -6,6 +6,7 @@ import { Header } from './components/Header';
 import { AboutMe } from './components/AboutMe';
 import { Experiences } from './components/Experiences';
 import { MyProjects } from './components/MyProjects';
+import { MySmallProjects } from './components/MySmallProjects';
 
 function Widgets(): JSX.Element {
   return (
@@ -28,6 +29,7 @@ export default function Home() {
       <AboutMe />
       <Experiences />
       <MyProjects />
+      <MySmallProjects />
     </main>
   );
 }

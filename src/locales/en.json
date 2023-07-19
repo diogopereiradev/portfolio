@@ -23,6 +23,7 @@
   "experiences.section.title": "Experiences",
 
   "experiences.section.skill.menu.experience.text": "Experience",
+  "experiences.skill.knowledges.message": "Knowledges",
   "experiences.section.skill.menu.experience.years.text": "years",
   "experiences.section.skill.menu.experience.year.text": "year",
   "experiences.section.skill.menu.experience.months.text": "months",
@@ -41,6 +42,8 @@
   "projects.project.card.project.name.text": "Project name",
   "projects.section.viewmore.button": "View more",
   "projects.section.project.mobile.menu.viewproject.button": "View project",
+
+  "mysmallprojects.section.title": "Small Projects",
 
   "footer.developed.by.message": "Developed by"
 }

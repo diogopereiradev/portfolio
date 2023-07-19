@@ -1,11 +1,13 @@
 import React from 'react';
 import { RiGithubLine, RiCodepenFill, RiLinkedinFill } from 'react-icons/ri';
 import { FaDiscord } from 'react-icons/fa';
+
+import { Client } from './client';
 import { SocialLink } from './components/SocialLink';
 
 export function FloatingSocialLinks(): JSX.Element {
   return (
-    <div className='fixed bottom-0 left-[43px] flex flex-col items-center gap-[20px] z-[9999]'>
+    <Client>
       <div className='flex flex-col gap-[12px] ml-[2px]'>
         <SocialLink.Root to='https://github.com/FhillSlinger'>
           <SocialLink.Icon size={25} color='text-primary-100'>{RiGithubLine}</SocialLink.Icon>
@@ -21,6 +23,6 @@ export function FloatingSocialLinks(): JSX.Element {
         </SocialLink.Root>
       </div>
       <hr className='h-[80px] w-[1px] bg-[#a1c1dc]' />
-    </div>
+    </Client>
   );
 }
