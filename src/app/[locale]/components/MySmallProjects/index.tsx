@@ -8,13 +8,13 @@ import { ProjectCard } from './components/ProjectCard';
 async function Projects(): JSX.Element {
   const codepenProjects = await useCodepen();
 
-  return(
+  return (
     <div className='flex columns-3 flex-wrap gap-[20px] mt-[50px]'>
-      {codepenProjects.map(project => 
-        <ProjectCard 
-          key={project.name} 
-          name={project.name} 
-          description={project.description} 
+      {codepenProjects.map(project =>
+        <ProjectCard
+          key={project.name}
+          name={project.name}
+          description={project.description}
           projectUrl={project.projectUrl}
         />
       )}

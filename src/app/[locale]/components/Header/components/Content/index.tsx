@@ -33,11 +33,11 @@ function Buttons(): JSX.Element {
     <>
       <div className='relative top-[10px] hidden mmd:flex flex-wrap gap-[20px]'>
         <LinkButton w={180} h={50} to='https://github.com/FhillSlinger'>Github</LinkButton>
-        <LinkButton w={180} h={50} to='/diogopereira-cv.pdf'>CV</LinkButton>
+        <LinkButton w={180} h={50} to='/assets/diogopereira-cv.pdf' download>CV</LinkButton>
       </div>
       <div className='relative base:flex mmd:hidden gap-[15px]'>
         <LinkButton w={55} h={55} to='https://github.com/FhillSlinger'><FiGithub size={20}/></LinkButton>
-        <LinkButton w={55} h={55} to='/diogopereira-cv.pdf'><IoMdDocument size={20}/></LinkButton>
+        <LinkButton w={55} h={55} to='/assets/diogopereira-cv.pdf' download><IoMdDocument size={20}/></LinkButton>
       </div>
     </>
   );

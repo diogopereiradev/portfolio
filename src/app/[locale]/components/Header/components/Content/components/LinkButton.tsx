@@ -4,10 +4,11 @@ type LinkButtonProps = {
   children: JSX.Element | JSX.Element[] | string,
   to: string,
   w: number,
-  h: number
+  h: number,
+  download?: boolean
 };
 
-export function LinkButton({ children, to, w, h }: LinkButtonProps): JSX.Element {
+export function LinkButton({ children, to, w, h, download = false }: LinkButtonProps): JSX.Element {
   return(
     <a 
       href={to}
@@ -32,6 +33,7 @@ export function LinkButton({ children, to, w, h }: LinkButtonProps): JSX.Element
         width: `${w}px`,
         height: `${h}px`
       }}
+      download={download}
     >
       {children}
     </a>
