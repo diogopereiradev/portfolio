@@ -1,4 +1,4 @@
-![GitHub](https://img.shields.io/github/license/FhillSlinger/portfolio) ![GitHub package.json version (subfolder of monorepo)](https://img.shields.io/github/package-json/v/FhillSlinger/portfolio) ![GitHub deployments](https://img.shields.io/github/deployments/FhillSlinger/portfolio/production?label=deploy) ![Languages Count](https://img.shields.io/github/languages/count/FhillSlinger/portfolio) ![Most Used Languages Count](https://img.shields.io/github/languages/top/FhillSlinger/portfolio) ![Files Count](https://img.shields.io/github/directory-file-count/FhillSlinger/portfolio)
+![GitHub package.json version (subfolder of monorepo)](https://img.shields.io/github/package-json/v/FhillSlinger/portfolio) ![GitHub deployments](https://img.shields.io/github/deployments/FhillSlinger/portfolio/production?label=deploy) ![Languages Count](https://img.shields.io/github/languages/count/FhillSlinger/portfolio) ![Most Used Languages Count](https://img.shields.io/github/languages/top/FhillSlinger/portfolio) ![Files Count](https://img.shields.io/github/directory-file-count/FhillSlinger/portfolio)
 
 ---
 # Portfolio
