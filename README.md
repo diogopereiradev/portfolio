@@ -24,7 +24,7 @@ Link: https://diogopereira.vercel.app
 
 ## Technologies Used
 
-- Next.js v13.4.9
+- Next.js v13.4.9 - App directory
 - Typescript
 - Tailwind CSS
 - Eslint
