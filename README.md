@@ -4,7 +4,7 @@
 # Portfolio
 This is my personal website, designed to showcase my projects and introduce myself in a more organized manner. This project was created using Next.js and Tailwind CSS. The reason for choosing Next.js is because I plan to expand this project for future versions of my portfolio and integrate other projects under the same domain.
 
-Link: https://diogopereira.vercel.app
+Link: https://diogopereira.tech
 
 
 ## Sections
