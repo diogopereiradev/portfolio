@@ -21,7 +21,6 @@ export async function NuxtJs(): JSX.Element {
           started: new Date('4/16/2023'),
         }
       }}
-      selected
     />
   );
 }
