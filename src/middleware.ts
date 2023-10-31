@@ -1,17 +1,10 @@
-import { NextRequest } from 'next/server';
-import { stackMiddlewares } from './shared/utils/stackMiddlewares';
-import { localeDetectionMiddlewareHandle } from './shared/middlewares/localeDetection.middleware';
-import { pathnameMiddlewareHandle } from './shared/middlewares/pathname.middleware';
-
-const middlewares = [
-  localeDetectionMiddlewareHandle,
-  pathnameMiddlewareHandle
-];
-
-export function middleware(req: NextRequest) {
-  return stackMiddlewares(req, middlewares);
-}
-
+import createMiddleware from 'next-intl/middleware';
+ 
+export default createMiddleware({
+  locales: ['en', 'pt'],
+  defaultLocale: 'en'
+});
+ 
 export const config = {
-  matcher: ['/((?!api|_next/static|_next/image|assets|favicon.ico|sw.js|*.png).*)']
+  matcher: ['/((?!api|_next|_vercel|.*\\..*).*)']
 };

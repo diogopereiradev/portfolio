@@ -1,19 +1,17 @@
 import React from 'react';
-import { useSSRTranslation } from '../../../../../../../../shared/hooks/useSSRTranslation';
+import { useTranslations } from 'next-intl';
 
 import { LocaleSelectInput } from '../../../../../../../components/LocaleSelectInput';
 import { NavigationLink } from './components/NavigationLink';
 
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
-async function NavigationLinks(): JSX.Element {
-  const { t } = await useSSRTranslation();
+function NavigationLinks(): JSX.Element {
+  const t = useTranslations();
 
   return (
     <div className='flex items-center gap-[10px]'>
-      <NavigationLink to='#aboutme'>{t('navbar.aboutme.label')}</NavigationLink>
-      <NavigationLink to='#skills'>{t('navbar.skills.label')}</NavigationLink>
-      <NavigationLink to='#projects'>{t('navbar.projects.label')}</NavigationLink>
+      <NavigationLink to='#aboutme'>{t('navbar-aboutme-label')}</NavigationLink>
+      <NavigationLink to='#skills'>{t('navbar-skills-label')}</NavigationLink>
+      <NavigationLink to='#projects'>{t('navbar-projects-label')}</NavigationLink>
     </div>
   );
 }
