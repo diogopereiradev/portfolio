@@ -1,5 +1,5 @@
 import React from 'react';
-import { SiStyledcomponents } from 'react-icons/si';
+import { FaVuejs } from 'react-icons/fa';
 import { useSSRTranslation } from '../../../../../../shared/hooks/useSSRTranslation';
 import { TechnologySelectButton } from '../../components/TechnologySelectButton';
 
@@ -7,20 +7,21 @@ import { knowledges } from './knowledges';
 
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
-export async function SC(): JSX.Element {
+export async function VueJs(): JSX.Element {
   const { t } = await useSSRTranslation();
 
   return (
     <TechnologySelectButton
       data={{
-        icon: <SiStyledcomponents size={40} color='#ca6bba' />,
-        name: 'SC',
-        description: t('experiences.section.skill.menu.description.styledcomponents'),
+        icon: <FaVuejs size={22} color='#70c947' />,
+        name: 'Vue.js',
+        description: t('experiences.section.skill.menu.description.vuejs'),
         knowledges,
         techExperience: {
-          started: new Date('4/1/2022')
+          started: new Date('3/8/2023'),
         }
       }}
+      selected
     />
   );
 }

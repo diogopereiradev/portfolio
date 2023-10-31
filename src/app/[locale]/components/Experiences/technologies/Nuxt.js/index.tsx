@@ -1,5 +1,5 @@
 import React from 'react';
-import { SiMui } from 'react-icons/si';
+import { FaCaretUp } from 'react-icons/fa';
 import { useSSRTranslation } from '../../../../../../shared/hooks/useSSRTranslation';
 import { TechnologySelectButton } from '../../components/TechnologySelectButton';
 
@@ -7,21 +7,21 @@ import { knowledges } from './knowledges';
 
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
-export async function MUI(): JSX.Element {
+export async function NuxtJs(): JSX.Element {
   const { t } = await useSSRTranslation();
 
   return (
     <TechnologySelectButton
       data={{
-        icon: <SiMui size={22} color='#549ec8' />,
-        name: 'MUI',
-        description: t('experiences.section.skill.menu.description.mui'),
+        icon: <FaCaretUp size={22} color='#70c947' />,
+        name: 'Nuxt.js',
+        description: t('experiences.section.skill.menu.description.nuxtjs'),
         knowledges,
         techExperience: {
-          started: new Date('4/1/2023'),
-          paused: new Date('6/1/2023')
+          started: new Date('4/16/2023'),
         }
       }}
+      selected
     />
   );
 }

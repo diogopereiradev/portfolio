@@ -4,10 +4,10 @@ import { ReactJs } from '../technologies/ReactJs';
 import { Redux } from '../technologies/Redux';
 import { NextJs } from '../technologies/NextJs';
 import { Tailwind } from '../technologies/Tailwind';
-import { SC } from '../technologies/SC';
-import { MUI } from '../technologies/MUI';
 import { Typescript } from '../technologies/Typescript';
 import { Git } from '../technologies/Git';
+import { VueJs } from '../technologies/VueJs';
+import { NuxtJs } from '../technologies/Nuxt.js';
 
 export function TechnologiesLoader(): JSX.Element {
   return (
@@ -15,9 +15,9 @@ export function TechnologiesLoader(): JSX.Element {
       <ReactJs />
       <Redux />
       <NextJs />
+      <VueJs />
+      <NuxtJs />
       <Tailwind />
-      <SC />
-      <MUI />
       <Typescript />
       <Git />
     </ul>
