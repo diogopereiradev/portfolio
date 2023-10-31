@@ -16,6 +16,7 @@ Link: https://diogopereira.tech
 
 
 ## Features
+
 - **Responsive Design:** The portfolio is designed to work seamlessly across various devices and screen sizes.
 - **Internationalization:** Have support for multi-languages (English/Portuguese). I plan to change i18next to next-intl, but not now
 - **Next.js:** Built using the Next.js framework, allowing for server-side rendering and optimized performance.
