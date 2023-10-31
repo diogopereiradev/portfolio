@@ -21,7 +21,6 @@ export async function VueJs(): JSX.Element {
           started: new Date('3/8/2023'),
         }
       }}
-      selected
     />
   );
 }
