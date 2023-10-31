@@ -6,15 +6,15 @@
 # testing
 /coverage
 
-# editor
-.vscode/
-
 # next.js
 /.next/
 /out/
 
 # production
 /build
+
+# editor
+/.vscode/
 
 # misc
 .DS_Store
