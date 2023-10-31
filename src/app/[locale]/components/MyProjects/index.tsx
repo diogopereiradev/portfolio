@@ -7,11 +7,16 @@ import { ProjectCard } from './components/ProjectCard';
 // @ts-ignore
 async function Projects(): JSX.Element {
   const repositories = await useRepositories();
+  const filteredByPriorityRepos = repositories.sort((a, b) => {
+    if(a.priority > b.priority) return 1;
+    if(a.priority < b.priority) return -1;
+    return 0;
+  });
   const isOdd = (value: number) => (value % 2) === 0? true : false;
 
   return(
     <div className='flex flex-col gap-[70px]'>
-      {repositories.map((repository, i) => <ProjectCard key={repository.name} data={repository} direction={isOdd(i)? 'right' : 'left'} />)}
+      {filteredByPriorityRepos.map((repository, i) => <ProjectCard key={repository.name} data={repository} direction={isOdd(i)? 'right' : 'left'} />)}
     </div>
   );
 }

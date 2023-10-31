@@ -8,6 +8,7 @@ export type ProjectCardTecnhology = {
 export type ProjectData = {
   projectIconUrl?: string,
   projectThumbImageUrl: string,
+  priority: number,
   name: string,
   description: {
     [key in SupportedLanguages]?: string
