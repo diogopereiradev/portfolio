@@ -1,8 +1,8 @@
 import React from 'react';
 import { Client } from './client';
-import { languagesFullnameDatabase, supportedLanguages } from '../../../shared/i18n/settings';
 import { FloatingMenuLanguage } from './components/FloatingMenuLanguage';
-import { useSSRLocale } from '../../../shared/hooks/useSSRLocale';
+import { useLocale } from 'next-intl';
+import { locales } from '../../../../i18n';
 
 export type LocaleSelectInputProps = {
   width: number | 'full',
@@ -10,11 +10,11 @@ export type LocaleSelectInputProps = {
 };
 
 function InputServerComponentsChildren(): JSX.Element {
-  const locale = useSSRLocale();
+  const locale = useLocale();
 
   return(
     <>
-      {languagesFullnameDatabase[locale]}
+      {locales[locale as keyof typeof locales].fullname}
     </>
   );
 }
@@ -22,8 +22,8 @@ function InputServerComponentsChildren(): JSX.Element {
 function FloatingMenuServerComponentsChildren(): JSX.Element {
   return (
     <>
-      {supportedLanguages.map(language => (
-        <FloatingMenuLanguage key={language} locale={language} />
+      {Object.values(locales).map(language => (
+        <FloatingMenuLanguage key={language.name} locale={language.name} />
       ))}
     </>
   );

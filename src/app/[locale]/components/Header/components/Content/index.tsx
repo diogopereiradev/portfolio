@@ -1,7 +1,7 @@
 import React from 'react';
 import { FiGithub } from 'react-icons/fi';
 import { IoMdDocument } from 'react-icons/io';
-import { useSSRTranslation } from '../../../../../../shared/hooks/useSSRTranslation';
+import { useTranslations } from 'next-intl';
 
 import { LinkButton } from './components/LinkButton';
 import { Client } from './client';
@@ -9,13 +9,14 @@ import { Client } from './client';
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 async function Title(): JSX.Element {
-  const { t } = await useSSRTranslation();
+  const t  = useTranslations();
+
   return (
     <>
-      <p className='text-[18px] font-[500] text-secondary-200 leading-[1] pl-[4px]'>{t('header.title.span')}</p>
+      <p className='text-[18px] font-[500] text-secondary-200 leading-[1] pl-[4px]'>{t('header-title-span')}</p>
       <div>
         <h2 className='base:text-[calc(25px+5.5vw)] xl:text-[80px] text-white-300 leading-[1]'>Diogo Pereira</h2>
-        <h2 className='base:text-[calc(25px+5.5vw)] xl:text-[75px] text-primary-100 leading-[1]'>{t('header.title.description')}</h2>
+        <h2 className='base:text-[calc(25px+5.5vw)] xl:text-[75px] text-primary-100 leading-[1]'>{t('header-title-description')}</h2>
       </div>
     </>
   );
@@ -24,8 +25,8 @@ async function Title(): JSX.Element {
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 async function Description(): JSX.Element {
-  const { t } = await useSSRTranslation();
-  return <p className='font-[400] base:text-[16px] xl:text-[17px] text-primary-100 max-w-[600px] pl-[4px] mt-[-10px]'>{t('header.description')}</p>;
+  const t  = useTranslations();
+  return <p className='font-[400] base:text-[16px] xl:text-[17px] text-primary-100 max-w-[600px] pl-[4px] mt-[-10px]'>{t('header-description')}</p>;
 }
 
 function Buttons(): JSX.Element {

@@ -1,11 +1,10 @@
 import React from 'react';
-import { SupportedLanguages } from '../../../../../../../shared/i18n/settings';
-import { useSSRLocale } from '../../../../../../../shared/hooks/useSSRLocale';
+import { useLocale } from 'next-intl';
 
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
 export async function Description({ name, description }: { name: string, description: { [key in SupportedLanguages]?: string } }): JSX.Element {
-  const locale = await useSSRLocale();
+  const locale = useLocale();
 
   return (
     <div className='flex flex-col gap-[10px] mt-[40px]'>

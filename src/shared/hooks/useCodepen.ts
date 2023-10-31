@@ -8,7 +8,12 @@ export async function useCodepen(): Promise<CodepenProjectData[]> {
   // @ts-ignore
   const request = await fetch('https://api.github.com/repos/FhillSlinger/FhillSlinger/contents/codepen.projects.json', requestOptions);
   const response = await request.json();
-  const content: { projects: CodepenProjectData[] } = JSON.parse(base64Repair(base64Decoder(response.content)));
-  const projects = content.projects;
-  return projects;
+  
+  try {
+    const content: { projects: CodepenProjectData[] } = JSON.parse(base64Repair(base64Decoder(response.content)));
+    const projects = content.projects;
+    return projects;
+  } catch {
+    return [];
+  }
 }
