@@ -18,7 +18,7 @@ export async function NextJs(): JSX.Element {
         description: t('experiences-section-skill-menu-description-nextjs'),
         knowledges,
         techExperience: {
-          started: new Date('6/1/2022')
+          started: new Date('6/1/2021')
         }
       }}
     />
