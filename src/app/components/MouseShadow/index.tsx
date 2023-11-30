@@ -7,19 +7,20 @@ export function MouseShadow(): JSX.Element {
   useEffect(() => {
     if(!mouseShadowRef.current) return;
     const shadow: HTMLDivElement = mouseShadowRef.current;
-    const shadowOffset = 420;
 
     shadow.style.opacity = '1';
 
     window.addEventListener('mousemove', (e) => {
-      const x = e.x - shadowOffset;
-      const y = e.y - shadowOffset;
-      shadow.style.left = `${x}px`;
-      shadow.style.top = `${y}px`;
+      shadow.style.left = `${e.x - 100}px`;
+      shadow.style.top = `${e.y - 100}px`;
     });
   }, [mouseShadowRef]);
 
   return(
-    <div ref={mouseShadowRef} style={{ opacity: '0', boxShadow: '350px 350px 250px #3641d1' }} className='fixed left-0 top-0 pointer-events-none w-[150px] h-[150px] rounded-full z-[-9999]' />
+    <div 
+      ref={mouseShadowRef} 
+      style={{ opacity: '0' }} 
+      className='fixed left-0 top-0 pointer-events-none w-[200px] h-[200px] rounded-full bg-[#3641d1]/30 blur-[300px] z-[-9999]'
+    ></div>
   );
 }
