@@ -18,7 +18,7 @@ export async function ReactJs(): JSX.Element {
         description: t('experiences-section-skill-menu-description-reactjs'),
         knowledges,
         techExperience: {
-          started: new Date('11/7/2021'),
+          started: new Date('6/1/2021'),
         }
       }}
       selected
