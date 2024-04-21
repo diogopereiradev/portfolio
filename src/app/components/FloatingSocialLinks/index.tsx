@@ -9,7 +9,7 @@ export function FloatingSocialLinks(): JSX.Element {
   return (
     <Client>
       <div className='flex flex-col gap-[12px] ml-[2px]'>
-        <SocialLink.Root to='https://github.com/FhillSlinger'>
+        <SocialLink.Root to='https://github.com/diogopereiradev'>
           <SocialLink.Icon size={25} color='text-primary-100'>{RiGithubLine}</SocialLink.Icon>
         </SocialLink.Root>
         <SocialLink.Root to='https://codepen.io/fhillslinger/pens/public'>
