@@ -8,6 +8,7 @@ import { Typescript } from '../technologies/Typescript';
 import { Git } from '../technologies/Git';
 import { VueJs } from '../technologies/VueJs';
 import { NuxtJs } from '../technologies/Nuxt.js';
+import { NodeJS } from '../technologies/Nodejs';
 
 export function TechnologiesLoader(): JSX.Element {
   return (
@@ -18,6 +19,7 @@ export function TechnologiesLoader(): JSX.Element {
       <VueJs />
       <NuxtJs />
       <Tailwind />
+      <NodeJS />
       <Typescript />
       <Git />
     </ul>

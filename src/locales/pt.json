@@ -1,10 +1,10 @@
 {
   "under-development-message": "Em Desenvolvimento",
 
-  "metadata-document-title": "Diogo Pereira | Desenvolvedor Front-end",
-  "metadata-og-title": "Diogo Pereira | Desenvolvedor Front-end",
-  "metadata-og-description": "Desenvolvedor front-end especializado em React.js, Next.js e Typescript, sempre buscando novos conhecimentos.",
-  "metadata-page-description": "Desenvolvedor front-end especializado em React.js, Next.js e Typescript, sempre buscando novos conhecimentos.",
+  "metadata-document-title": "Diogo Pereira | Desenvolvedor Fullstack",
+  "metadata-og-title": "Diogo Pereira | Desenvolvedor Fullstack",
+  "metadata-og-description": "Desenvolvedor Fullstack especializado em React.js, Next.js, Vue.js, Nuxt.js, Node.js e Typescript, sempre buscando novos conhecimentos.",
+  "metadata-page-description": "Desenvolvedor Fullstack especializado em React.js, Next.js, Vue.js, Nuxt.js, Node.js e Typescript, sempre buscando novos conhecimentos.",
 
   "navbar-mobile-menu-workwithme-button": "Contate-me",
   "navbar-aboutme-label": "Sobre mim",
@@ -12,8 +12,8 @@
   "navbar-projects-label": "Projetos",
 
   "header-title-span": "Olá, me chamo",
-  "header-title-description": "Desenvolvedor Front-end",
-  "header-description": "Venho me especializando principalmente no desenvolvimento Front-End para garantir ótimas experiências para o usuario, estou sempre buscando novas oportunidades de colocar meus conhecimentos em prática. Gosto de estudar outras areas em meu tempo vago.",
+  "header-title-description": "Desenvolvedor Fullstack",
+  "header-description": "Venho me especializando principalmente no desenvolvimento Fullstack para garantir ótimas experiências para o usuario e segurança em meus projetos. Estou sempre buscando novas oportunidades de colocar meus conhecimentos em prática. Gosto de estudar outras areas em meu tempo vago.",
 
   "aboutme-section-title": "Sobre mim",
   "aboutme-section-description-paragraph-1": "Desde os meus 14 anos, me interesso por programação. Tudo começou quando comecei a criar plugins para o Minecraft, e logo me vi imerso nesse universo fascinante. Por um período, também tive a oportunidade de trabalhar em um servidor de Minecraft, o que me proporcionou valiosas experiências.",
@@ -34,6 +34,7 @@
   "experiences-section-skill-menu-description-nextjs": "O Next.js é uma ferramenta quase que essencial para um desenvolvedor React.js, pois te permite ter um controle muito maior da sua aplicação, tanto em performance como em SEO, pois ele permite o SSR, que garante que seu conteúdo apareça para os robos de indexação do google.",
   "experiences-section-skill-menu-description-vuejs": "Eu escolhi estudar Vue.js para ter como uma de minhas stacks porque eu gostei da flexibilidade e da curva de aprendizado que é muito menor em comparação a outros frameworks/libs.",
   "experiences-section-skill-menu-description-nuxtjs": "O Nuxt.js é uma ferramenta essencial para o desenvolvimento com o Vue.js, pois te permite a renderização do lado do servidor de forma fácil, e com isso você pode garantir um ótimo SEO.",
+  "experiences-section-skill-menu-description-nodejs": "O Node.js é uma ferramente muito utilizada hoje em dia para o desenvolvimento de aplicações Back-end, com ela você tem a possibilidade de criar API's seguras e escaláveis com a possibilidade de utilizar diversas outras ferramentas em conjunto para agilizar o desenvolvimento.",
   "experiences-section-skill-menu-description-tailwind": "O Tailwind é um framework CSS muito prático em questão de produtividade, mesmo que as vezes possa parecer uma bagunça, mas nada que uma boa separação de componentes não resolva.",
   "experiences-section-skill-menu-description-typescript": "O Typescript se tornou praticamente indispensável hoje em dia quando se trata de trabalhar com Javascript, ele permite ter um controle infinitamente maior do seu código em comparação ao Javascript puro, já que te permite a utilização de tipagem estática, além do intellisense que está disponivel em diversos editores de código, o intellisense te permite identificar erros dentro do próprio editor, o que naturalmente ajuda muito o debug.",
   "experiences-section-skill-menu-description-git": "O Git é uma ferramenta que facilita muito o trabalho em equipe e o controle de versionamento de projetos, é inegável que é uma das ferramentas obrigatórias para um programador que preze sua carreira.",
