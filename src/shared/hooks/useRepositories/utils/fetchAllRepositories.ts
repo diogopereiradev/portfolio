@@ -5,6 +5,8 @@ export async function fetchAllRepositories(): Promise<string[]> {
   // eslint-disable-next-line @typescript-eslint/ban-ts-comment
   // @ts-ignore
   const request = await fetch(`${API_URL}/users/${OWNER}/repos`, { next: { revalidate: CACHE_REVALIDATE_SECONDS } });
+
+  console.log(request);
   
   if(request.status === 200) {
     const repositories = await request.json();
