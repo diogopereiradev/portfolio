@@ -16,7 +16,7 @@ export async function Footer(): JSX.Element {
       <div className='flex flex-col items-center'>
         <h3 className='text-[18px] text-primary-100'>{t('footer-developed-by-message')} Diogo Pereira</h3>
         <div className='flex gap-[8px] items-center ml-[-6px]'>
-          <SocialLink.Root to='https://github.com/FhillSlinger'>
+          <SocialLink.Root to='https://github.com/diogopereiradev'>
             <SocialLink.Icon size={25} color='text-primary-100'>{RiGithubLine}</SocialLink.Icon>
           </SocialLink.Root>
           <SocialLink.Root to='https://codepen.io/fhillslinger/pens/public'>
