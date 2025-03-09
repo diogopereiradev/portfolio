@@ -22,7 +22,7 @@ export async function Footer(): JSX.Element {
           <SocialLink.Root to='https://codepen.io/fhillslinger/pens/public'>
             <SocialLink.Icon size={25} color='text-primary-100'>{RiCodepenFill}</SocialLink.Icon>
           </SocialLink.Root>
-          <SocialLink.Root to='https://www.linkedin.com/in/fhill-slinger/'>
+          <SocialLink.Root to='https://www.linkedin.com/in/diogopereiradev/'>
             <SocialLink.Icon size={23} color='text-primary-100'>{RiLinkedinFill}</SocialLink.Icon>
           </SocialLink.Root>
           <SocialLink.Root to='https://discord.com/users/882178309205671956'>
