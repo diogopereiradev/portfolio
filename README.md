@@ -25,7 +25,7 @@ Link: https://diogopereira.site
 
 ## Technologies Used
 
-- Next.js v13.5.6 - App directory
+- Next.js v13.5.6
 - Typescript
 - Tailwind CSS
 - Eslint
